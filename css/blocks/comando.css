@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .comando {
-  background: url("../../img/background/campani.jpg") center center/cover no-repeat; }
+  background: url("../img/background/campani.jpg") center center/cover no-repeat; }
 
 /* скрываем чекбоксы и блоки с содержанием */
 .hide {

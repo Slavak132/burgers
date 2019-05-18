@@ -514,12 +514,24 @@ footer {
   display: inline-block;
   text-decoration: none; }
 
+.hegader__order-btn {
+  padding: 10px 10px;
+  background-color: #e45028;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none; }
+
 .btn:focus {
   border: 3px solid transparent;
   outline: none; }
 
 .btn:hover {
-  padding: 10px 15px;
+  padding: 10px 10px;
   background-color: #e45028;
   border-radius: 5px;
   border-color: transparent;
@@ -562,7 +574,7 @@ footer {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url("../../img/anchorL.png") center center/cover no-repeat; }
+  background: url("../img/anchorL.png") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
@@ -654,7 +666,7 @@ footer {
   height: 50%; }
 
 .comando {
-  background: url("../../img/background/campani.jpg") center center/cover no-repeat; }
+  background: url("../img/background/campani.jpg") center center/cover no-repeat; }
 
 /* скрываем чекбоксы и блоки с содержанием */
 .hide {
