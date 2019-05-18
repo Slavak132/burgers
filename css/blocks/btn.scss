@@ -1,0 +1,39 @@
+.btn{
+  padding: 10px 15px;
+  background-color: #e4512800;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+
+.btn:focus {
+  border: 3px solid transparent;
+  outline: none;
+
+  
+}
+
+.btn:hover{
+  padding: 10px 15px;
+  background-color: #e45028;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+
+

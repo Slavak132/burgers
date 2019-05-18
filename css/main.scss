@@ -1,0 +1,65 @@
+//цвета
+
+$orange: #e45028;
+$yelloow: #f9b43d;
+$black: #2f3234;
+$rad: #e35028;
+
+
+//нормалайз
+@import "_misc/normalize.scss";
+
+
+// подключенные файлы
+@import "_misc/mixins.scss";
+@import "_misc/fonts.scss";
+@import "_misc/layout.scss";
+
+
+//Для каждого самостоятельного блока создаем отдельный файл
+
+// Блоки
+
+@import"blocks/first.scss";
+@import"blocks/header.scss";
+@import"blocks/menu.scss";
+@import"blocks/btn.scss";
+@import"blocks/section-title.scss";
+@import"blocks/down-arrow.scss";
+@import"blocks/best.scss";
+@import"blocks/feature.scss";
+@import"blocks/review.scss";
+@import"blocks/reviews.scss";
+@import"blocks/comando.scss";
+@import"blocks/team.scss";
+@import"blocks/job.scss";
+@import"blocks/order.scss";
+@import"blocks/burgers.scss";
+@import"blocks/produkt.scss";
+@import"blocks/map.scss";
+@import"blocks/footer.scss";
+@import"blocks/fixed-nav.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

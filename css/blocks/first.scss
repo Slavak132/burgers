@@ -1,0 +1,17 @@
+.first{
+  background: url('../img/background/texturefirst.jpg') center center / cover no-repeat;
+  position: relative;
+}
+.first__container{
+justify-content: flex-start;
+}
+.first__content{
+  flex: .8;
+  display: flex;
+  align-items: center;
+  
+}
+.first__content-text,
+.first__content-img{
+  width: 50%;
+}

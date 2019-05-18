@@ -1,0 +1,19 @@
+.best__list{
+  display: flex;
+  padding: 0 10px;
+}
+.best{
+  background: url('../img/background/best.jpg')center center / cover no-repeat;
+}
+
+.best__item{
+  flex: 1;
+  margin-right: 10px;
+
+  &:last-child{
+    margin-right: 0;
+
+  }
+
+}
+

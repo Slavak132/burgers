@@ -1,0 +1,78 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased; //сглаживание
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  // @include ubuntu(); // примесь для начертания шрифта
+  color: $black;
+}
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  min-width: 940px + 20px; // ограничиваем по ширине чтобы он не сжимался
+  min-height: 100%;
+  overflow: hidden; //все что вне не видно
+
+}
+
+.section{
+  height: 100vh;
+  min-height: 650px;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  &__team{
+    margin-right: inherit;
+    width: 50%;
+  }
+
+}
+
+
+// обнуляю отступы у заголовков
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table{
+  border-collapse: collapse; // таблица чтобы у всех ячеек был один border на двоих
+  border-spacing: 0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  & > li{
+    list-style: none; // убираем стилизацию списков
+  }
+
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+footer {
+  position: relative;
+  width: 100%;
+}
