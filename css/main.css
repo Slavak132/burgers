@@ -310,37 +310,37 @@ template {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../../font/Gagalin-Regular.woff") format("woff"), url("../../font/Gagalin-Regular.otf") format("ttf");
+  src: url("../font/Gagalin-Regular.woff") format("woff"), url("../font/Gagalin-Regular.otf") format("ttf");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("../../font/Lifehack-Medium.woff") format("woff"), url("../../font/deartype.woff2") format("woff2"), url("../../font/deartype.woff") format("woff2"), url("../../font/Lifehack.otf") format("otf");
+  src: url("../font/Lifehack-Medium.woff") format("woff"), url("../font/deartype.woff2") format("woff2"), url("../font/deartype.woff") format("woff2"), url("../font/Lifehack.otf") format("otf");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Ubuntu-B';
-  src: url("../../font/Ubuntu-B.woff") format("woff"), url("../../font/Ubuntu-B.ttf") format("ttf");
+  src: url("../font/Ubuntu-B.woff") format("woff"), url("../font/Ubuntu-B.ttf") format("ttf");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu-Light';
-  src: url("../../font/Ubuntu-Light.woff") format("woff"), url("../../font/Ubuntu-Light.ttf") format("ttf");
+  src: url("../font/Ubuntu-Light.woff") format("woff"), url("../font/Ubuntu-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url("../../font/Ubuntu-Medium.woff") format("woff"), url("../../font/Ubuntu-Medium.ttf") format("ttf");
+  src: url("../font/Ubuntu-Medium.woff") format("woff"), url("../font/Ubuntu-Medium.ttf") format("ttf");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: url("../../font/Ubuntu-Regular.woff") format("woff"), url("../../font/Ubuntu-Regular.ttf") format("ttf");
+  src: url("../font/Ubuntu-Regular.woff") format("woff"), url("../font/Ubuntu-Regular.ttf") format("ttf");
   font-weight: bold;
   font-style: normal; }
 
