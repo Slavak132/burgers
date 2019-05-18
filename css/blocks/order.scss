@@ -1,0 +1,170 @@
+.order{
+  background: url('../img/background/bg-texture.jpg')center center / cover no-repeat;
+}
+.form{
+  margin-top: 5%;
+}
+
+.checkbox{
+  display: flex;
+}
+
+.lable__text,.checkbox__text{
+  color: white;
+  text-align: left;
+  left: 0;
+  margin-bottom: 10px;
+}
+.checkbox__text--l{
+  color: white;
+  margin-left: 10px;
+}
+
+.form__line{
+  display: flex;
+  flex: 1;
+  // margin-right: 5%;
+  
+  margin-bottom: 22px; 
+  
+}
+.lable--rith{
+  margin-right: 5%;
+}
+.form__coll{
+  width: 50%;
+  margin-right: 5%;
+  
+}
+.form__left,.form__rith{
+  width: 50%;
+}
+.lable{
+  width: 100%;
+}
+textarea{
+  outline: none;
+  height: 110px;
+  
+}
+textarea:focus {
+  border: 3px solid #eeb753;
+  
+}
+input:focus {
+  border: 3px solid #eeb753;
+}
+.lable__input{
+  height: 35px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+.lable__textarea{
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  resize: none;
+}
+
+.form__wrap{
+  display: flex;
+  font-family: 'Ubuntu-Medium';
+  font-size: 13px;
+}
+.checkbox-wrapper__list{
+  display: flex;
+}
+
+.checkbox-wrapper__list {
+	display: flex;
+}
+
+.checkbox-wrapper__elem {
+	margin-right: 20px;
+}
+
+.checkbox__input {
+  position: absolute;
+  
+	opacity: 0;
+}
+.checkbox__input--cub {
+  position: absolute;
+  
+	opacity: 0;
+}
+
+.checkbox__btn {
+  background-color: white;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+}
+.checkbox__btn:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #f89513;
+	opacity: 0;
+}
+
+
+
+.checkbox__btn--cub {
+  background-color: white;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	// border-radius: 50%;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+}
+.checkbox__btn--cub:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	// border-radius: 50%;
+	background-color: #f89513;
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.checkbox__content {
+	display: flex;
+	align-items: center;
+}
+
+
+
+.checkbox__input:checked + .checkbox__content .checkbox__btn:before {
+	opacity: 1;
+}
+.checkbox__input--cub:checked + .checkbox__content .checkbox__btn--cub:before {
+	opacity: 1;
+}
