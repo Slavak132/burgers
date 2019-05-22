@@ -1,0 +1,17 @@
+.job{
+  background: url('../img/background/how__work.jpg')center center / cover no-repeat;
+
+}
+.video{
+  display: flex;
+  justify-content: center;
+
+}
+
+.section__title_black{
+  font-family: 'Gagalin-Regular';
+  font-size: rem(72px);
+  color: $black;
+  text-align: center;
+  margin-top: rem(85px);
+}
