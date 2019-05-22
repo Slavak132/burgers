@@ -1,6 +1,6 @@
 //colors
 $orange: #e45028;
-$yellow: #f9b43b;
+$yellow: #f8b33b;
 $black: #2f3234;
 $red: #e35028;
 
@@ -37,15 +37,14 @@ $desktop: 1200px;
 @import "blocks/hero.scss";
 @import "blocks/logo.scss";
 @import "blocks/map.scss";
-@import "blocks/menu-acco.scss";
+@import "blocks/menu-accordeon.scss";
 @import "blocks/menu.scss";
 @import "blocks/nav.scss";
 @import "blocks/order-link.scss";
 @import "blocks/order.scss";
-@import "blocks/popups.scss";
 @import "blocks/reviews.scss";
 @import "blocks/section.scss";
 @import "blocks/socials.scss";
-@import "blocks/team-acco.scss";
+@import "blocks/team-accordion.scss";
 @import "blocks/team.scss";
 @import "blocks/text-block.scss";

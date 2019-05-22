@@ -1,7 +1,10 @@
+
+
 .menu {
 	background: url('../img/background/menu.jpg') 50% no-repeat;
 	background-size: cover;
-	position: relative;
+	justify-content: flex-end;
+	// position: relative;
 }
 
 .menu__title {
