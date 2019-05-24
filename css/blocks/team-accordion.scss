@@ -2,6 +2,8 @@
 
 .team-accordion {
 	@include tablets {
+	
+		
 		padding-bottom: rem(20px);
 	}
 }
@@ -34,10 +36,17 @@
 	height: rem(100px);
 	@include cover;
 	border-radius: 50%;
+	@include tablets {
+		margin-bottom: rem(20px);
+	}
+	
 }
 .team-accordion__text {
 	margin-left: rem(20px);
 	width: 70%;
+	@include tablets {
+		margin-left: 0;
+	}
 }
 .team-accordion__pic, .team-accordion__text {
 	@include tablets {
@@ -55,6 +64,9 @@
 
 .team-accordion__item{
 	color: white;
+	@include tablets {
+		text-align: center;
+	}
 }
 
 .team-accordion__trigger {
@@ -115,6 +127,8 @@
 	display: none;
 
 	@include tablets {
+		// text-align: center;
+		flex-direction: column;
 		padding: 0 25%;
 	}
 }
@@ -123,122 +137,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-//---------------------------------------------------------------------
-// .window{
-// 	position: relative;
-// 	display: flex;
-
-
-// }
-// .window__pic{
-// 	widows: rem(100px);
-// 	height: rem(100px);
-// 	border-radius: 50%;
-// }
-
-
-// .window:hover .window__menu{
-// display: block;
-// }
-
-// .window__link{
-// 	text-decoration: none;
-// 	color: white;
-//   font-family: 'Gagalin-Regular';
-//   font-size: rem(14px);
-//   text-transform: uppercase;
-// }
-// .window:hover .window__link{
-// 	color: $yellow;
-// 	}
-
-// .window__menu{
-// 	position: absolute;
-// 	// background: white;
-// 	border: 1px solid white;
-// 	width: rem(400px);
-// 	top: 100%;
-// 	left: -8%;
-// 	display: none;
-// 	padding: rem(8px) rem(10px);
-// 	margin: rem(5px) auto;
-
-// }
-// .window__item{
-// 	color: white;
-// 	font-family: 'Ubuntu';
-// 	font-size: rem(14px);
-// 	width: 190px;
-// 	display: inline-block;
-// 	margin-left: rem(10px);
-// }
-
-
-
-//---------------------------------------------------------------------
-// .accordion__text1 {
-// 	width: rem(200px);
-//   // position: absolute;
-//   bottom: 5%;
-//   left: 0%;
-  
-//   font-weight: 500;
-//   color: inherit;
-  
-//   &--titles{
-//   font-family: 'Gagalin-Regular';
-//   font-size: rem(14px);
-//   text-transform: uppercase;
-//   color: white;
-//   margin-left: 11%;
-// 	}
-// 	@include phones {
-//     font-size: rem(26px);
-//   }
-// }
-// .accordion1__pic{
-// 	display: none;
-// }
-
-
-// .accordion__description1 {
-	
-//   position: relative;
-//   width: 0;
-//   // height: 0;
-//   font-size: 1em;
-//   line-height: 1.5;
-//   opacity: 0;
-//   color: inherit;
-//   transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
-//   z-index: 10;
-// }
-// .accordion-item:hover .accordion__description1 {
-// 	color: white;
-//   width: rem(400px);
-//   // padding: 56px 26px;
-//   opacity: 1;
-// 	transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
-// 	.accordion1__pic{
-// 		// display: inline-block;
-
-// 		position: relative;
-// 		text-align:center;
-// 		align-items: center;
-// 		width: rem(100px);
-// 		height: rem(100px);
-// 		margin: 0 auto;
-// 		cursor: pointer;
-// 		margin-bottom: 65px;
-// 	}
-// }
-//---------------------------------------------------------------------

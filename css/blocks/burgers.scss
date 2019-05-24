@@ -16,7 +16,11 @@
 		font-family: 'Gagalin-Regular';
 		font-size: rem(72px);
 		color: white;
-		line-height: .9;
+    line-height: .9;
+    @include tablets {
+      
+      font-size: rem(50px);
+    }
 		}
 }
 
@@ -24,6 +28,12 @@
 .container__burgers{
   display: flex;
   flex-flow: row;
+  @include tablets {
+		text-align: center;
+		flex-direction: column;
+		
+	}
+
 }
 
 // .burgers__block{
@@ -59,25 +69,52 @@ border: 1px solid transparent;
 border-radius: 5px;
 width: rem(90px);
 height: rem(90px);
+@include tablets {
+  display: none;
+}
 }
 
-.kkal__txt, .kkal__txt1{
-color: #fbf6ef;
-// justify-content: center;
-// align-content: center;
-font-size: rem(22px);
-font-family: 'Gagalin-Regular';
-font-weight: 300;
-}
+.kkal1{ 
+  display: none;
 
-.kkal__txt{
-margin-top: rem(65px);
-margin-bottom: rem(20px);
-padding-left: rem(5px);
-}
-.kkal__txt1{
-padding-right: rem(10px);
-}
+  @include tablets {
+	
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/kkal.png);
+  // background-position-y: 10px;
+  // background-position-x: 19px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  opacity: .8; 
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: rem(90px);
+  height: rem(90px);
+  margin-bottom: -79px;
+  margin-left: 500px;
+  }
+  }
+
+// .kkal__txt, .kkal__txt1{
+// color: #fbf6ef;
+// // justify-content: center;
+// // align-content: center;
+// font-size: rem(22px);
+// font-family: 'Gagalin-Regular';
+// font-weight: 300;
+// }
+
+// .kkal__txt{
+// margin-top: rem(65px);
+// margin-bottom: rem(20px);
+// padding-left: rem(5px);
+// }
+// .kkal__txt1{
+// padding-right: rem(10px);
+// }
 
 .composition{
 display: flex;
@@ -109,6 +146,11 @@ font-weight: 300;
   width: 50%;
   // height: 420px;
   // margin-top: 20%;
+  @include tablets {
+    margin: 0 auto;
+    text-align: center;
+    height: 50%;
+  }
 
   .burgers__black--text{
   
