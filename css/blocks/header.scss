@@ -1,12 +1,13 @@
 .header {
-	padding-top: rem(12px);
+	padding-top: rem(11px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .header__logo {
-	@include laptop {
+	width: rem(70px);
+	@include tablets {
 		width: 15%;
 	}
 }
@@ -21,7 +22,7 @@
 	text-align: right;
 	margin-right: rem(20px);
 
-	@include laptop {
+	@include tablets {
 		width: 85%;
 	}
 

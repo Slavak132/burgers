@@ -3,7 +3,7 @@
 	top: rem(90px);
 	right: rem(40px);
 
-	@include laptop {
+	@include tablets {
 		display: none;
 	}
 }

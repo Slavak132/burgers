@@ -1,5 +1,5 @@
 html {
-  @include laptop {
+  @include tablets {
     font-size: rem(15px);
   }
   @include phones {
@@ -33,7 +33,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  // min-width: rem(940px) + rem(20px);
   min-height: 100%;
   overflow: hidden;
 }

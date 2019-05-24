@@ -1,7 +1,18 @@
-.yandex-map {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+// .yandex-map {
+
+
+// 	position: absolute;
+// 	top: 5%;
+// 	bottom: 15%;
+// 	left: 15%;
+// 	right: 15%;
+// }
+
+.map {
+	background: url("../img/background/maping.png") center center no-repeat;
+	background-size: cover;
+	position: relative;
+	@include tablets {
+		padding-bottom: rem(100px);
+	}
 }

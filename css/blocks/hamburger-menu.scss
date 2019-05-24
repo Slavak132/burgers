@@ -10,6 +10,10 @@
 	z-index: 100;
 	display: none;
 	transition: opacity .3s;
+	@mixin tablets{
+		display: none;
+	}
+
 
 	&_visible {
 		display: flex;

@@ -30,7 +30,7 @@
 	width: 100%;
 	@extend %clearfix;
 
-	@include laptop {
+	@include tablets {
 		text-align: center;
 	}
 }
