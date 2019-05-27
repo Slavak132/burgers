@@ -366,6 +366,8 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 768px) { .header__menu { text-align: right; } }
 
+.logo__icon { max-height: 4.375rem; }
+
 .hero { background: url("../img/background/texture.jpg") center center no-repeat; background-size: cover; position: relative; }
 
 @media screen and (max-width: 768px) { .hero { padding-bottom: 6.25rem; } }
