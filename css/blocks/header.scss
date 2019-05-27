@@ -1,4 +1,5 @@
 .header {
+	height: rem(100px);
 	padding-top: rem(11px);
 	display: flex;
 	justify-content: space-between;
@@ -7,6 +8,7 @@
 
 .header__logo {
 	width: rem(70px);
+	// height: rem(70px);
 	@include tablets {
 		width: 15%;
 	}
