@@ -14,7 +14,7 @@
 	}
 	.section__title_white{
 		font-family: 'Gagalin-Regular';
-		font-size: rem(72px);
+		font-size: rem(66px);
 		color: white;
     line-height: .9;
     @include tablets {
@@ -28,6 +28,9 @@
 .container__burgers{
   display: flex;
   flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
   @include tablets {
 		text-align: center;
 		flex-direction: column;
@@ -35,16 +38,15 @@
 	}
 
 }
+// .burgers-slider{
+//   display: flex;
+//   @include tablets {
+//     margin: 0 auto;
+//     text-align: center;
+//     height: 50%;
+//   }
+// }
 
-.slider-control--left {
-  left: 4.5%;
-  transform: rotate(45deg);
-}
-
-.slider-control--rigth {
-    right: 4.5%;
-    transform: rotate(225deg);
-}
 .slider-control {
     width: 1.5rem;
     height: 1.5rem;
@@ -57,21 +59,24 @@
     border-top-color: transparent;
     border-right-color: transparent;
     z-index: 20;
+
 }
 
 .slider-control--left {
   left: -2%;
   transform: rotate(45deg);
+  @include tablets {
+    left: 10%;
+  }
 }
 
 .slider-control--rigth {
     right: -2%;
     transform: rotate(225deg);
+    @include tablets {
+      right: 10%;
+    }
 }
-
-
-
-
 
 .burgers__block{
   display: flex;
@@ -91,6 +96,34 @@
 width: rem(500px);
 }
 
+
+
+.composition{
+
+  display: flex;
+  @include tablets {
+    // padding-top: 40px;
+  }
+}
+.consists{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url(../img/orangburger.png);
+  // background-position-y: rem(10px);
+  // background-position-x: rem(18px);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  // background-color: #b24c2b;
+  // border: 1px solid transparent;
+  // border-radius: 5px;
+  width: rem(90px);
+  height: rem(90px);
+  @include tablets {
+    background-size: 80%;
+  }
+  }
+
 .kkal{ 
 display: flex;
 flex-flow: column;
@@ -100,12 +133,12 @@ background-image: url(../img/kkal.png);
 // background-position-y: 10px;
 // background-position-x: 19px;
 background-repeat: no-repeat;
-background-size: 70%;
-opacity: .8; 
+background-size: 90%;
+// opacity: .8; 
 border: 1px solid transparent;
 border-radius: 5px;
-width: rem(90px);
-height: rem(90px);
+width: rem(70px);
+height: rem(80px);
 @include tablets {
   display: none;
 }
@@ -115,7 +148,7 @@ height: rem(90px);
   display: none;
 
   @include tablets {
-	
+  margin-left: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -124,14 +157,14 @@ height: rem(90px);
   // background-position-y: 10px;
   // background-position-x: 19px;
   background-repeat: no-repeat;
-  background-size: 70%;
-  opacity: .8; 
-  border: 1px solid transparent;
-  border-radius: 5px;
-  width: rem(90px);
-  height: rem(90px);
-  margin-bottom: -79px;
-  margin-left: 500px;
+  background-size: 80%;
+  // opacity: .8; 
+  // border: 1px solid transparent;
+  // border-radius: 5px;
+  width: rem(70px);
+  height: rem(80px);
+  margin-bottom: rem(-79px);
+  // margin-left: 500px;
   }
   }
 
@@ -153,28 +186,14 @@ height: rem(90px);
 // padding-right: rem(10px);
 // }
 
-.composition{
-display: flex;
-flex-flow: column;
-align-items: center;
-background-image: url(../img/orangburger.png);
-background-position-y: rem(10px);
-background-position-x: rem(18px);
-background-repeat: no-repeat;
-background-size: rem(50px);
-background-color: #b24c2b;
-border: 1px solid transparent;
-border-radius: 5px;
-width: rem(90px);
-height: rem(90px);
-}
-.composition__text{
-margin-top: rem(60px);
-color: white;
-font-size: rem(14px);
-font-family: 'Gagalin-Regular';
-font-weight: 300;
-}
+
+// .composition__text{
+// margin-top: rem(60px);
+// color: white;
+// font-size: rem(14px);
+// font-family: 'Gagalin-Regular';
+// font-weight: 300;
+// }
 
 .burgers__block{
   display: flex;
@@ -236,7 +255,7 @@ font-weight: 300;
     }
     .black__btn{
       flex-flow: row;
-      margin-left: 12%;
+      margin-left: 4%;
       color: #b24c2b;
       font-size: rem(15px);
       text-decoration: none; /* убираем у ссылки нижнее подчеркивание*/

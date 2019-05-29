@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  width: rem(600px);
+  // height: 100%;
+  overflow: hidden;
+  margin: 0 25px;
+  margin-bottom: 20px;
+}
+.burger {
+  display: flex;
+  display: -webkit-box;
+  position: relative;
+  font-size: 90%;
+}
+.burgers-slider {
+
+  align-items: center;
+  justify-content: center;
+  width: rem(600px);
+  height: 100%;
+  display: flex;
+  @include tablets {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
