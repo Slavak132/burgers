@@ -10,6 +10,7 @@ html {
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   @include ubuntu();
   color: $black;
 }
+
 
 .container {
   margin: 0 auto;

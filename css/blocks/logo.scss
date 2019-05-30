@@ -1,11 +1,11 @@
 .logo {
 	display: inline-block;
 	position: relative;
-	z-index: 110;
+	z-index: 1;
 
-	svg {
-		max-width: 95%;
-	}
+	// svg {
+	// 	max-width: 100%;
+	// }
 }
 
 .logo__img {
@@ -13,6 +13,7 @@
 }
 
 .logo__icon {
+	width: rem(70px);
 	path:nth-child(1) {
 		fill: #e45028;
 	}
