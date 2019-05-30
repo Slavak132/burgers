@@ -65,8 +65,8 @@
 	width: 24px;
 	height: 5px;
 	position: fixed;
-	top: 6%;
-	left: 93.5%;
+	top: 15%;
+	left: 60%;
 	display: block;
 	border-radius: 10px/10px;
 	background: #fff;
@@ -110,12 +110,12 @@
 	@include tablets {
 	padding-top: 5%;
 	position: fixed;
-	top: 0;
+	top: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	background: #2f3234;
 	
 	}
@@ -139,7 +139,7 @@
 	@include tablets {
 		flex-direction: column;
     font-size: 1.1em;
-    line-height: 2;
+    line-height: .5;
     text-align: center;
 }
 }
