@@ -27,9 +27,6 @@
 }
 
 .nav__list {
-	width: 100%;
-	@extend %clearfix;
-
 	@include tablets {
 		text-align: center;
 	}
