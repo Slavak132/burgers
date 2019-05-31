@@ -362,6 +362,8 @@ footer { position: relative; width: 100%; }
 
 .header { height: 6.25rem; padding-top: 0.6875rem; display: flex; justify-content: space-between; align-items: center; }
 
+@media screen and (max-width: 768px) { .header { width: 100%; } }
+
 .header__logo { width: 4.375rem; height: 4.375rem; }
 
 @media screen and (max-width: 768px) { .header__logo { width: 15%; } }
