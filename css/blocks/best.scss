@@ -27,9 +27,10 @@
 
 .best__list {
   display: flex;
-  @include tablets () {
+  @include phones {
     flex-direction: column;
   }
+  
 }
 
 .best__item {
@@ -37,7 +38,7 @@
   padding: 0 rem(15px);
   display: flex;
   flex-direction: column;
-  @include tablets {
+  @include phones {
     flex-direction: row;
     width: 100%;
     margin-bottom: rem(25px);
@@ -45,7 +46,7 @@
 }
 
 .best__icon {
-  @include tablets {
+  @include phones {
     margin-right: rem(20px);
     width: 30%;
   }
@@ -55,7 +56,7 @@
   @include tablets {
     text-align: left;
     display: block;
-    width: 65%;
+    width: 100%;
   }
 }
 

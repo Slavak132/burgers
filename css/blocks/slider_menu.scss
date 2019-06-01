@@ -1,29 +1,48 @@
 .slider {
-  display: flex;
-  width: rem(600px);
-  // height: 100%;
+  // display: flex;
+  width: 95%;
+  height: 100%;
   overflow: hidden;
-  margin: 0 25px;
-  margin-bottom: 20px;
+  @include tablets {
+    display: flex;
+    width: 55vh;
+    // margin: 0 25px;
+    // margin-bottom: 20px;
+  }
+  
+ 
 }
 .burger {
   display: flex;
   display: -webkit-box;
   position: relative;
   font-size: 90%;
-}
-.burgers-slider {
-
-  align-items: center;
-  justify-content: center;
-  width: rem(600px);
-  height: 100%;
-  display: flex;
   @include tablets {
+    display: flex;
+  }
+}
+
+.burgers-slider{
+  display: flex;
+  width: 100%;
+  // text-align: right;
+  // border: 2px solid black;
+  @include tablets {
+    // display: block;
+    // display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 55vh;
+
+    // height: 100%;
     text-align: center;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
   }
+//   @include phones {
+//     width: 30vh;
+
+// }
 }
