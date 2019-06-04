@@ -1,21 +1,25 @@
 .burgers {
 	background: #f9b43b; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
-	display: flex;
+	background: -moz-linear-gradient(top,  #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+	background: -webkit-linear-gradient(top,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+	background: linear-gradient(to bottom,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+	display: -webkit-box;
+  // display: flex;
+  
 	align-items: center;
 	justify-content: center;
 	.section__title {
-		margin-bottom: rem(115px);
+		margin-bottom: rem(110px);
 
 	}
 	.section__title_white{
+    margin-left: rem(12px);
 		font-family: 'Gagalin-Regular';
-		font-size: rem(66px);
+		font-size: rem(72px);
 		color: white;
-    line-height: .9;
+    line-height: 1;
+    // margin-bottom: rem(50px);
+    height: 20%;;
     @include tablets {
       
       font-size: rem(50px);
@@ -43,14 +47,14 @@
 .slider-control {
 
     position: absolute;
-    top: 50%;
+    top: 47%;
     display: block;
     // z-index: 20;
 
 }
 
 .slider-control--left {
-  left: -2%;
+  left: -5%;
   @include tablets {
     left: 0%;
     z-index: 10;
@@ -58,7 +62,7 @@
 }
 
 .slider-control--rigth {
-    right: -2%;
+    right: -5%;
     @include tablets {
       right: 0%;
     }
@@ -87,7 +91,7 @@ width: rem(500px);
   background-image: url(../img/orangburger.png);
 
   background-repeat: no-repeat;
-  background-size: 90%;
+  // background-size: 100%;
 
   width: rem(90px);
   height: rem(90px);
@@ -97,27 +101,29 @@ width: rem(500px);
   }
 
 .kkal{ 
-display: flex;
-flex-flow: column;
-align-items: center;
-justify-content: center;
-background-image: url(../img/kkal.png);
-// background-position-y: 10px;
-// background-position-x: 19px;
-background-repeat: no-repeat;
-background-size: 90%;
-// opacity: .8; 
-border: 1px solid transparent;
-border-radius: 5px;
-width: rem(70px);
-height: rem(80px);
-@include tablets {
-  display: none;
-}
+  margin-top: -25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/kkal.png);
+  // background-position-y: 10px;
+  // background-position-x: 19px;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  // opacity: .8; 
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: rem(70px);
+  height: rem(80px);
+  @include tablets {
+    display: none;
+  }
 }
 
 .kkal1{ 
   display: none;
+ 
 
   @include tablets {
   margin-left: auto;
@@ -138,14 +144,14 @@ height: rem(80px);
   margin-bottom: rem(-79px);
   // margin-left: 500px;
   }
-  }
+}
 
 .burgers__block{
   display: flex;
   flex-flow: column;
   // justify-content: space-between;
 
-  // width: 50%;
+  width: 50%;
   // height: 510px;
   justify-content: center;
   // margin-top: 100px;
@@ -161,20 +167,22 @@ height: rem(80px);
   }
 
   .burgers__black--description{
-  
-  width: rem(510px);
-  height: rem(500px);
-  font-size: rem(14px);
-  color: rgb(255, 255, 255);
-  font-family: 'Ubuntu-Light';
-  font-weight: 300;
-  font-style: normal;
-  width: rem(370px);
-  height: 120px;
-  // border: 2px solid black;
+    display: flex;
+    margin-left: 10px;
+    width: rem(460px);
+    // margin-top: rem(100px);
+    // height: rem(500px);
+    font-size: rem(14px);
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu-Light';
+    font-weight: 300;
+    font-style: normal;
+    height: 120px;
+    // border: 2px solid black;
 
 }
 }
+
 // .burgers__black--description{
 //   display: flex;
 //   font-family: 'Ubuntu-Light';
@@ -188,14 +196,16 @@ height: rem(80px);
 // }
 
 .price{
-  display: flex;
-  margin-left: 2%;
+  margin-top: 10px;
+  // display: flex;
+  margin-left: 3%;
   
     .burgers__black--price{
+    margin-bottom: 20px;
     display: flex;
     flex-flow: nowrap;
     align-items: baseline;
-
+    // margin-bottom: 10px;
     font-size: 4.5em;
     color: #b24c2b;
     font-family: 'Gagalin-Regular';
@@ -213,9 +223,9 @@ height: rem(80px);
     }
     .black__btn{
       flex-flow: row;
-      margin-left: 4%;
+      margin-left: 9%;
       color: #b24c2b;
-      font-size: rem(15px);
+      font-size: rem(14px);
       text-decoration: none; /* убираем у ссылки нижнее подчеркивание*/
       text-transform:uppercase;
       justify-content: space-between;

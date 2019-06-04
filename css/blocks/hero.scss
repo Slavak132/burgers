@@ -36,6 +36,9 @@
 }
 
 .hero__left {
+  @include tablets {
+    width: 100%;
+  }
   @include phones {
     height: rem(230px);
   }
@@ -56,8 +59,10 @@
   font-size: rem(65px);
   color: white;
   @include lifehack;
+  font-size: rem(55px);
   text-transform: lowercase;
   line-height: 1em;
+  margin-top: rem(25px);
 }
 
 .hero__img {
@@ -69,7 +74,8 @@
   max-height: 100%;
 
   @include tablets {
-    max-width: 80%;
+    max-width: 100%;
+    // margin-top: 75px;
   }
 }
 

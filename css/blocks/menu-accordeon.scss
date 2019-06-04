@@ -37,7 +37,9 @@
 }
 .accordion__img {
   position: relative;
+  background-image: url(../img/background/Formeateater.jpg);
   width: rem(100px);
+  background-size: 200% 100%;
 
   @include tablets {
   

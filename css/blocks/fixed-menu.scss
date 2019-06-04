@@ -1,7 +1,7 @@
 .fixed-menu {
 	position: fixed;
 	top: rem(90px);
-	right: rem(40px);
+	right: 3.1rem;
 
 	@include tablets {
 		display: none;
@@ -61,5 +61,5 @@
 }
 
 .fixed-menu__item {
-	margin-bottom: rem(5px);
+	margin-bottom: 0.33rem;
 }

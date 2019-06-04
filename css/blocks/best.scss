@@ -6,7 +6,7 @@
   align-items: center;
   background-position: center center;
   .section__title {
-    margin-bottom: rem(80px);
+    margin-bottom: rem(40px);
     @include tablets {
       margin-bottom: rem(40px);
     }
@@ -14,7 +14,7 @@
 }
 
 .best__icon-pic {
-  width: 90%;
+  width: 35%;
   height: rem(100px);
   svg {
     max-width: 95%;

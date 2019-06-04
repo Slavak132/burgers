@@ -1,6 +1,7 @@
 .burger-menu {
 	display: none;
 	@include tablets {
+	margin-right: 12px;
 	width: rem(24px);
 	height: 5px;
 	margin-left: 5px;
@@ -91,7 +92,7 @@
 .nav {
 	display: flex;
 	flex: 1;
-	padding: 0 4.79%;
+	padding: 0 10%;
 	@include tablets {
 		display: none;
 

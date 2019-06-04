@@ -13,8 +13,15 @@
 }
 
 .logo__icon {
-	width: rem(70px);
+	max-height: rem(70px);
+	width: rem(90px);
 	path:nth-child(1) {
 		fill: #e45028;
 	}
+	@include tablets {
+		max-height: 5.375rem;
+		width: 6.625rem;
+
+	}
 }
+
