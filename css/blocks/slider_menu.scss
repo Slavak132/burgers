@@ -29,7 +29,10 @@
   // border: 2px solid black;
   @include tablets {
     // display: block;
-    // display: inline-block;
+    display: inline-block;
+
+
+    
     margin: 0 auto;
     text-align: center;
     width: 55vh;

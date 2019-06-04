@@ -23,6 +23,7 @@
 			background: rgba(#2f3234, .93);
 		}
 	}
+
 }
 
 .team__section {
@@ -33,6 +34,7 @@
 	left: 50%;
 	background: rgba(#2f3234, .93);
 	padding: 5% 2% 0 7%;
+	text-align: center;
 
 
 	@include tablets {

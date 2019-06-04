@@ -4,7 +4,7 @@
   color: inherit;
   @include phones {
     font-size: rem(16px);
-  	width: 50%;
+  	width: 100%;
   }
 }
 .accordion-item {
@@ -30,16 +30,29 @@
   background: rgba(2, 2, 2, 0.61);
   width: 100%;
   height:100%;
+  @include tablets {
+  
+  	width: 100%;
+  }
 }
 .accordion__img {
   position: relative;
   width: rem(100px);
+
+  @include tablets {
+  
+    width: rem(68px);
+  }
 }
 .accordion__pic {
-  width: 6.25rem;
+  width: rem(100px);
+  // width: 2.25rem;
   height: 100%;
   object-fit: cover;
-  // opacity: .4;
+  @include tablets {
+    width: 4.25rem;
+  }
+  
 }
 
 .accordion__text {
@@ -55,6 +68,10 @@
   font-style: normal;
   font-size: rem(40px);
   color: white;
+  @include tablets {
+  
+  	left: 0%;
+  }
 }
 .accordion__description {
   font-family: 'Ubuntu';
@@ -69,6 +86,10 @@
   font-size: 1em;
   line-height: 1.5;
   z-index: 10;
+  @include tablets {
+    font-size: rem(12px);
+
+  }
 }
 
 .accordion-item--active .accordion__description {
@@ -80,9 +101,9 @@
   padding-left: 1.625rem;
 }
 
-.titles{
+.accordion__text--titles{
   @include tablets {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
