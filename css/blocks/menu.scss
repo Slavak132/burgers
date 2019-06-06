@@ -4,6 +4,7 @@
 	background: url('../img/background/menu.jpg') 50% no-repeat;
 	background-size: cover;
 	justify-content: flex-end;
+
 	// position: relative;
 }
 
@@ -11,4 +12,16 @@
 	position: absolute;
 	top: 10%;
 	left: 10%;
+	margin-left: -2vh;
+	margin-top: 3vh;
+	@include tablets{
+		margin-left: -5vh;
+    margin-top: -2vh;
+    font-size: rem(72px);
+	}
+	@include phones{
+		margin-top: -10%;
+    margin-left: 1%;
+    font-size: 54px;
+	}
 }

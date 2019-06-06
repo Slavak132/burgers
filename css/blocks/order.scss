@@ -1,3 +1,11 @@
+.container__order{
+  margin-top: rem(-16px);
+  @include tablets {
+    margin-top: 1rem;
+  }
+
+}
+
 .order {
   background: url("../img/background/bg-texture.jpg") 50% no-repeat;
   background-size: cover;
@@ -5,6 +13,15 @@
   align-items: center;
   .section__title {
     text-align: center;
+    @include tablets {
+    font-size: 4.8rem;
+    margin-bottom: 3vh;
+    }
+    @include phones {
+      font-size: 3.8rem;
+      line-height: 1.2;
+      margin-top: 0%;
+    }
   }
 }
 
@@ -13,18 +30,33 @@
   margin-left: -5%;
   @include tablets {
     margin-left: 0;
-    padding: 0 20%;
+    padding: 0 18%;
   }
   @include phones {
     padding: 0;
+    // height: rem(36px);
+  }
+}
+.order__form-tag{
+  @include tablets {
+    margin-bottom: 11em;
+  }
+  @include phones {
+    margin-bottom: 6em;
+    // height: rem(36px);
   }
 }
 
 .order__form-col {
   float: left;
   width: 45%;
-  margin-left: 5%;
+  margin-left: rem(42px);
   @include tablets {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  @include phones{
     width: 100%;
     float: none;
     margin-left: 0;
@@ -34,8 +66,14 @@
 .order__form-row {
   margin-bottom: rem(16px);
   display: flex;
+  width: 29em;
+  @include tablets {
+  width: 31.4em;
+  }
   @include phones {
-    margin-bottom: rem(7px);
+    margin-left: 0.0625rem;
+    width: 32.4em;
+    // margin-top: 14%;
   }
 }
 
@@ -56,6 +94,12 @@
   border: rem(1px) solid #d1cfcb;
   border-radius: rem(5px);
   width: 100%;
+  @include phones {
+    font-size: rem(20px);
+    &.floor{
+      display: block;
+    }
+  }
 }
 
 .order__form-block {
@@ -65,6 +109,16 @@
 
 .order__form-row_double {
   margin-left: rem(-20px);
+  width: 30em;
+  @include tablets {
+    width: 33em;
+  }
+  @include phones {
+    margin-left: -1.5625rem;
+    width: 34em;
+    // margin-bottom: 0.6rem;
+    // margin-top: 5%;
+  }
   .order__form-block {
     width: calc(100% / 2 - rem(20px));
     margin-left: rem(20px);
@@ -73,6 +127,14 @@
 
 .order__form-row_quatro {
   margin-left: rem(-20px);
+  width: 30em;
+  @include tablets {
+    width: 33em;
+  }
+  @include phones {
+    width: 34em;
+    // margin-top: 5%;
+  }
   .order__form-block {
     width: calc(100% / 4 - rem(20px));
     margin-left: rem(20px);
@@ -81,14 +143,24 @@
 
 .order__form-input_textarea {
   height: rem(110px);
+  width: 33em;
   resize: none;
+  @include tablets {
+    width: 36em;
+  }
+  @include phones {
+
+    width: 26em;
+  }
 }
 
 .order__form-buttons {
   @include phones {
     .order__form-row {
       justify-content: center;
-      margin-bottom: rem(17px);
+      // margin-bottom: rem(17px)
+      margin-top: 8%;
+      
     }
   }
 }
@@ -177,9 +249,15 @@
   text-transform: uppercase;
   border-radius: rem(5px);
   color: #ffffff;
+  @include tablets {
+    margin-top: 2vh;
+  }
   @include ubuntu(middle);
   padding: rem(10px) rem(15px);
   cursor: pointer;
+  @include phones{
+    margin-bottom: -11%;
+  }
 }
 
 .order__form-button_reset {
@@ -187,4 +265,7 @@
   padding-right: 0;
   text-transform: none;
   background: transparent;
+  @include tablets {
+    margin-top: 2vh;
+  }
 }

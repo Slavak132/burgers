@@ -7,6 +7,10 @@
 .socials__item {
 	@include inlineblock(middle);
 	margin-left: rem(10px);
+	@include tablets {
+		margin-left: 0.88rem;
+  }
+	
 }
 
 .socials__link {
@@ -22,8 +26,8 @@
 }
 
 .vk, .fb, .twitter, .inst{
-  width: rem(20px);
-	height: rem(20px);
+  width: rem(25px);
+	height: rem(25px);
 	
 	// color: waith;
 

@@ -3,14 +3,18 @@
   justify-content: flex-end;
   color: inherit;
   @include phones {
-    font-size: rem(16px);
-  	width: 100%;
+  font-size: rem(16px);
+  width: 100%;
   }
 }
 .accordion-item {
   position: relative;
   display: flex;
   overflow: hidden;
+  @include tablets{
+		// margin-left: 2vh;
+
+	}
 }
 .accordion-item--active::before {
   content: "";
@@ -37,15 +41,28 @@
 }
 .accordion__img {
   position: relative;
-  background-image: url(../img/background/Formeateater.jpg);
-  width: rem(100px);
+  
+  width: rem(80px);
   background-size: 200% 100%;
+  &.accordion__img--meat{
+    background-image: url(../img/background/Formeateater.jpg);
+  }
+  &.accordion__img--dieta{
+    background-image: url(../img/background/dietary.jpg);
+  }
+  &.accordion__img--dieta{
+    background-image: url(../img/background/vegetarian.jpg);
+  }
 
   @include tablets {
   
-    width: rem(68px);
+    width: rem(85px);
+  }
+  @include phones{
+    width: 5.75rem;
   }
 }
+
 .accordion__pic {
   width: rem(100px);
   // width: 2.25rem;
@@ -70,9 +87,15 @@
   font-style: normal;
   font-size: rem(40px);
   color: white;
+  bottom: 6%;
+  left: -29%;
   @include tablets {
-  
-  	left: 0%;
+    bottom: 3%;
+    left: -27%;
+  }
+  @include phones{
+    left: -30%;
+    bottom: 7.5%;
   }
 }
 .accordion__description {
@@ -105,7 +128,7 @@
 
 .accordion__text--titles{
   @include tablets {
-    font-size: 1.5rem;
+    font-size: rem(44px);
   }
 }
 

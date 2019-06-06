@@ -1,12 +1,27 @@
 .team-list {
+	margin-top: 7%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: 100%;
 	margin-left: 7em;
+	@include tablets {
+		margin-top: 3%;
+		margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	
 }
 .team-list__item {
 	position: relative;
+	@include tablets {
+		// margin-bottom: -1em;
+	}
+	@include phones{
+		margin-bottom: rem(9px);
+	}
 }
 .team-list__img {
 	display: none;
@@ -28,9 +43,11 @@
 	flex-direction: column;
 	@include tablets {
 		text-align: center;
+		display: flex;
 	}
 	@include phones {
 		margin-bottom: rem(20px);
+		display: flex;
 
 	}
 
@@ -38,7 +55,7 @@
 }
 
 .team-list__name {
-	margin-bottom: 1%;
+	// margin-bottom: 1%;
 	// width: rem(140px);
 	// height: rem(20px);
 	font-family: 'Gagalin-Regular';
@@ -50,7 +67,8 @@
 	cursor: pointer;
 	color: white;
 	@include tablets {
-display: inline-block;
+	font-size: rem(25px);
+	display: inline-block;
 	}
 }
 .team-list__name::before {
@@ -62,33 +80,47 @@ display: inline-block;
 	right: 104%;
 }
 .team-list__slider-control {
+
+	
 	top: 52%;
 	width: 0;
 	height: 0;
 	position: absolute;
 	// top: 50%;
 	right: 104%;
-	transform: translateY(-20%);
+
+	transform: translateY(-40%);
 	// transition: 0.4s ease-in;
 	border: 5px solid#f7b23b;
 	border-bottom: none;
 	border-left-color: transparent;
 	border-right-color: transparent;
+	
 }
 .team-list__name--active .team-list__slider-control {
 	top: 5%;
 	width: 0;
 	height: 0;
 	position: absolute;
-	// top: 50%;
 	right: 104%;
-	transform: translateY(-20%);
+	transform: translateY(-60%);
+	border: 5px solid #f7b23b;
+	border-top: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	@include tablets {
+	top: 5%;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 104%;
+	transform: translateY(250%);
 	border: 5px solid #f7b23b;
 	border-top: none;
 	border-left-color: transparent;
 	border-right-color: transparent;
 }
-
+}
 .team-list__slider-text {
 	display: none;
 	position: relative;
@@ -113,34 +145,51 @@ p {
 
 .team-list__name--active ~ p.team-list__slider-text {
 	display: inline-block;
-	// opacity: 1;
-	left: 0px;
+	font-size: rem(14px);
+	left: rem(-26px);
 	text-align: left;
 	width: rem(200px);
-	transform: translateY(0%);
+	line-height: 180%;
+	transform: translateY(-24%);
 	// margin-left: 180px;
 	@include tablets {
-		text-align: center;
-		margin: 0 auto;
-		transform: translateY(0%);
+		display: flex;
+    flex-direction: column;
+		width: 100%;
+		left: -0.625rem;
+    text-align: center;
+    margin-left: -1px;
+		margin-top: -1.2em;
+		font-size: rem(13px);
+		// margin: 0 auto;
+		// transform: translateY(0%);
 	}
+	@include phones {
+		margin-top: -2.3em;
+		}
 
 }
 .team-list__name--active ~ .team-list__img {
-		margin-left: -112px;
+		margin-left: -89px;
+		
 		display: inline-block;
     width: rem(100px);
 		height: rem(100px);
 		transform: translateY(-40%);
 		@include tablets {
-			text-align: center;
-			display: flex;
-			transform: translateX(50%);
-			margin-bottom: 20px
+			// margin-left: -112px;
+			margin-left: 18px;
+			display: inline-block;
+			width: 6.25rem;
+			height: 6.25rem;
+			transform: translateX(115px);
+			margin-bottom: 60px;
+			margin-top: 12px;
+
 		}
 		@include phones {
-		width: rem(100px);
-		height: rem(100px);
-		transform: translateX(5em);
+		width: rem(120px);
+		height: rem(120px);
+		transform: translateX(7em);
 		}
 }

@@ -15,19 +15,38 @@
 .section__title {
 	color: $yellow;
 	font-size: rem(72px);
+	@include tablets {
+		font-size: rem(80px);
+		// font-size: 5.2rem;
+		// height: 100vh;
+	
+	}
+	@include phones {
+		margin-top: rem(20px);
+		font-size: rem(70px);
+		// font-size: 5.2rem;
+		// height: 100vh;
+	
+	}
+
 	@include gagalin;
 	margin-bottom: rem(12px);
 
 	&.section__title_black {
 		color: $black;
+		@include phones {
+		font-size: rem(58px);
+	}
+
 	}
 
 	&.section__title_white {
 		color: white;
+
 		
 
 	}
-	@include phones {
-		font-size: rem(40px);
-	}
+	// @include phones {
+		// font-size: rem(70px);
+	// }
 }

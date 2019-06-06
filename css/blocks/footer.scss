@@ -5,16 +5,21 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-  padding: rem(10px) 0;
+  // padding: rem(2px) 0;
 }
 
 .footer__container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+	align-items: center;
+	@include tablets {
+		width: 92%;
+		height: rem(65px);
+  }
 
   @include phones {
-    flex-direction: column;
+		flex-direction: column;
+		height: rem(132px);
   }
 }
 
@@ -36,7 +41,10 @@
 
 .footer__address {
 	color: #ffffff;
-	font-size: rem(14px);
+	font-size: rem(15px);
+	@include phones{
+		padding-top: 2vh;
+	}
 }
 
 .footer__phone {

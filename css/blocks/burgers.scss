@@ -1,3 +1,4 @@
+
 .burgers {
 	background: #f9b43b; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
@@ -13,35 +14,42 @@
 
 	}
 	.section__title_white{
-    margin-left: rem(12px);
+    // margin-left: rem(12px);
 		font-family: 'Gagalin-Regular';
 		font-size: rem(72px);
 		color: white;
     line-height: 1;
-    // margin-bottom: rem(50px);
-    height: 20%;;
+    margin-bottom: -2.375rem;
+    margin-left: -18px;
     @include tablets {
-      
-      font-size: rem(50px);
+      width: 5.8em;
+      // margin-bottom: rem(20px);
+      // margin-left: -6vh;
+      font-size: rem(80px);
+    }
+    @include phones {
+      font-size: rem(58px);
+      width: 8.8em;
     }
 		}
 }
-
-
-.container__burgers{
-  
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  // margin-top: 50px;
-  @include tablets {
-		text-align: center;
-		flex-direction: column;
-		
-	}
-
+.burgers__black{
+  width: 40em;
+/* left: 15em; */
+  margin-left: -4em;
+  @include tablets{
+  margin-left: -7em;
+  margin-top: -3em;
 }
+@include phones{
+  margin-top: 0em;
+  width: 40em;
+  left: 15em;
+  margin-left: -4em;
+}
+}
+
+
 
 
 .slider-control {
@@ -49,6 +57,9 @@
     position: absolute;
     top: 47%;
     display: block;
+    @include tablets {
+      top: 48%;
+    }
     // z-index: 20;
 
 }
@@ -59,6 +70,11 @@
     left: 0%;
     z-index: 10;
   }
+  @include phones{
+    left: -2%;
+    top: 45%;
+    z-index: 10;
+  }
 }
 
 .slider-control--rigth {
@@ -66,22 +82,41 @@
     @include tablets {
       right: 0%;
     }
+    @include phones{
+      right: -2%;
+    }
 }
 
 
 
 .icon{
 // margin-left: 0px;
-width: rem(500px);
+  width: rem(450px);
+  margin-left: rem(20px);
+  @include tablets {
+    width: 50vh;
+    margin-left: 0px;
+}
 }
 
 
-
 .composition{
-
+  margin-top: 1em;
   display: flex;
+  margin-left: rem(-31px);
   @include tablets {
+    width: 38em;
+    margin-top: 1em;
+    margin-left: -5em;
+    margin-bottom: 3em;
+    // width: 36em;
+    // margin-left: -4em;
+    // margin-top: 3em;
     // padding-top: 40px;
+  }
+  @include phones {
+    margin-left: 0em;
+    margin-top: 3em;
   }
 }
 .consists{
@@ -93,15 +128,16 @@ width: rem(500px);
   background-repeat: no-repeat;
   // background-size: 100%;
 
-  width: rem(90px);
-  height: rem(90px);
+  width: rem(100px);
+  height: rem(100px);
   @include tablets {
-    background-size: 80%;
+    background-size: 100%;
+    // margin-top: %;
   }
   }
 
 .kkal{ 
-  margin-top: -25px;
+  margin-left: -32px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -126,87 +162,82 @@ width: rem(500px);
  
 
   @include tablets {
-  margin-left: auto;
+  margin-left: 68%;
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
   background-image: url(../img/kkal.png);
-  // background-position-y: 10px;
-  // background-position-x: 19px;
   background-repeat: no-repeat;
-  background-size: 80%;
-  // opacity: .8; 
-  // border: 1px solid transparent;
-  // border-radius: 5px;
   width: rem(70px);
-  height: rem(80px);
-  margin-bottom: rem(-79px);
-  // margin-left: 500px;
   }
+  @include phones {
+    margin-left: 56%;
+  }
+  
 }
 
 .burgers__block{
   display: flex;
   flex-flow: column;
-  // justify-content: space-between;
-
   width: 50%;
-  // height: 510px;
+  // margin-left: vh;
   justify-content: center;
-  // margin-top: 100px;
-  // height: 420px;
-  // margin-top: 20%;
-  // border: 2px solid black;
   @include tablets {
-    
-    margin: 0 auto;
+    // margin-top: 25%;
+    // margin: 0 auto;
     text-align: center;
 
     
   }
+  @include phones {
+    width: 100%;
+  }
 
   .burgers__black--description{
+    margin-top: 41px;
+    width: 32em;
     display: flex;
-    margin-left: 10px;
-    width: rem(460px);
-    // margin-top: rem(100px);
-    // height: rem(500px);
+    margin-left: -17px;
     font-size: rem(14px);
     color: rgb(255, 255, 255);
     font-family: 'Ubuntu-Light';
     font-weight: 300;
     font-style: normal;
     height: 120px;
-    // border: 2px solid black;
-
+    align-items: flex-end;
+    @include tablets {
+    width: 40em;
+    align-items: center;
+    margin-left: -89px;
+    }
+    @include phones {
+      width: 35em;
+      margin-left: -10px;
+    }
+    
 }
 }
-
-// .burgers__black--description{
-//   display: flex;
-//   font-family: 'Ubuntu-Light';
-//   margin-left: 3%;
-//   font-style: normal;
-//   // width: 500px;
-//   // height: 120px;
-//   font-size: rem(14px);
-//   color: rgb(255, 255, 255);
-  
-// }
 
 .price{
-  margin-top: 10px;
+  margin-top: rem(10px);
   // display: flex;
-  margin-left: 3%;
+  margin-left: -5%;
+  @include tablets {
+    // width: rem(500px);
+    // margin-bottom: 2%;
+    margin-top: 1%;
+  }
+  @include phones{
+    margin-left: 11%;
+    font-size: rem(10px);
+  }
+  }
   
     .burgers__black--price{
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     display: flex;
     flex-flow: nowrap;
     align-items: baseline;
     // margin-bottom: 10px;
-    font-size: 4.5em;
+    font-size: 5.5em;
     color: #b24c2b;
     font-family: 'Gagalin-Regular';
     font-weight: 300;
@@ -214,16 +245,24 @@ width: rem(500px);
     font-style: normal;
     .rubles{
     flex-flow: row;
-    margin-left: rem(10px);
+    margin-left: rem(5px);
     font-size: rem(28px);
     color: #b24c2b;
     font-family: 'Gagalin-Regular';
     font-weight: 300;
     font-style: normal;
+    @include tablets {
+      margin-left: rem(7px);
+    }
+    @include phones{
+      
+      font-size: rem(28px);
+    }
+
     }
     .black__btn{
       flex-flow: row;
-      margin-left: 9%;
+      margin-left: 5%;
       color: #b24c2b;
       font-size: rem(14px);
       text-decoration: none; /* убираем у ссылки нижнее подчеркивание*/
@@ -232,6 +271,14 @@ width: rem(500px);
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       font-style: normal;
+      @include tablets {
+        margin-left: 9%;
+      }
+      @include phones{
+        margin-left: rem(50px);
+        font-size: rem(16px);
+        margin-bottom: rem(30px);
+      }
       
   }
   .black__btn:hover{
@@ -249,7 +296,7 @@ width: rem(500px);
     background: #b24c2b;
   }
 }
-}
+
 
 .burgers__block:last-child{
   // margin-left: 25px;
@@ -278,7 +325,9 @@ width: rem(500px);
   transition: opacity .3s;
   animation: myAnimation .3s;
   word-spacing: rem(50px);
-
+  @include tablets {
+  margin-left: 24rem;
+  }
 } 
 .element{
   text-align: center;
@@ -291,12 +340,6 @@ width: rem(500px);
 
 }
 
-.icon{
-    @include phones {
-    width: 40vh;
-
-}
-}
 
 
 
