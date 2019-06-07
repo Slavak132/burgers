@@ -47,7 +47,11 @@
 
 	}
 	@include phones {
-		// margin-top: 2%;
+		margin-top: -9%;
 		font-size: 3.75rem;
+		&.section__title_hero {
+			margin-top: 6%;
+			font-size: 4.5rem;
+		}
 	}
 }

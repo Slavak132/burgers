@@ -28,9 +28,11 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 15%;
+  @include phones {
+  // padding-bottom: 15%;
+  align-items: center;
 }
-
+}
 
 
 .hero__left {
@@ -66,7 +68,7 @@
   font-size: rem(65px);
   text-transform: lowercase;
   line-height: 1em;
-  margin-top: rem(5px);
+  // margin-top: rem(5px);
 }
 
 .hero__img {
@@ -81,7 +83,7 @@
     position: inherit;
     // margin-top: rem(-147px);
     transform: translateX(31%);
-    margin-top: rem(80px);
+    // margin-top: rem(80px);
   }
   @include phones {
     // position: inherit;
