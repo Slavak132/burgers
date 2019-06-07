@@ -13,6 +13,15 @@
     // margin: 0 25px;
     // margin-bottom: 20px;
   }
+  @include phones{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: column;
+  }
+
 }
 
 .slider {
@@ -32,20 +41,26 @@
     height: 100%;
     margin-left: rem(-56px);
     overflow: hidden;
-    border: 19px solid transparent;
+    // border: 19px solid transparent;
     // margin: 0 25px;
     // margin-bottom: 20px;
   }
 
   @include phones{
-    display: flex;
-    margin-left: 1%;
-    /* margin-bottom: -95px; */
-    width: 109%;
+    display: inline-block;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    width: 100%;
     height: 100%;
-    margin-left: 1.5rem;
+    margin-left: 0;
     overflow: hidden;
-    // border: 19px solid black;
+    // display: flex;
+    // margin-left: 1%;
+    // width: 100%;
+    // height: 100%;
+    // margin-left: 1.5rem;
+    // overflow: hidden;
+
 
   }
   
@@ -60,7 +75,8 @@
     display: flex;
   }
   @include phones {
-    width: 100%;
+    // width: 100%;
+    font-size: 100%;
   }
 }
 
@@ -74,14 +90,9 @@
   @include tablets {
     // display: block;
     display: inline-block;
-
-
-    
     margin: 0 auto;
     text-align: center;
     width: 70vh;
-
-    // height: 100%;
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -89,15 +100,11 @@
     justify-content: center;
   }
   @include phones {
-        /* display: inline-block; */
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    /* width: 70vh; */
-    /* text-align: center; */
     display: flex;
     flex-flow: column;
-    /* align-items: center; */
+    // width: 100%;
     justify-content: center;
+    margin: 0;
 
 
 }

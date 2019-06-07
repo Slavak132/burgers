@@ -29,7 +29,8 @@
     }
     @include phones {
       font-size: rem(58px);
-      width: 8.8em;
+      width: 10.2em;
+      margin-left: -18px;
     }
 		}
 }
@@ -42,10 +43,12 @@
   margin-top: -3em;
 }
 @include phones{
-  margin-top: 0em;
-  width: 40em;
-  left: 15em;
-  margin-left: -4em;
+    margin-left: -3em;
+    margin-top: -1em;
+  // margin-top: 0em;
+  // width: 40em;
+  // left: 15em;
+  // margin-left: -4em;
 }
 }
 
@@ -71,7 +74,7 @@
     z-index: 10;
   }
   @include phones{
-    left: -2%;
+    left: 1%;
     top: 45%;
     z-index: 10;
   }
@@ -83,7 +86,8 @@
       right: 0%;
     }
     @include phones{
-      right: -2%;
+      right: 1%;
+      top: 45%;
     }
 }
 
@@ -115,8 +119,11 @@
     // padding-top: 40px;
   }
   @include phones {
-    margin-left: 0em;
-    margin-top: 3em;
+    // width: 32em;
+    margin-top: 1em;
+    margin-left: 1em;
+    // margin-bottom: 0em;
+    margin-bottom: 4em;
   }
 }
 .consists{
@@ -189,6 +196,7 @@
   }
   @include phones {
     width: 100%;
+    align-items: center;
   }
 
   .burgers__black--description{
@@ -226,8 +234,9 @@
     margin-top: 1%;
   }
   @include phones{
-    margin-left: 11%;
+    margin-left: -14%;
     font-size: rem(10px);
+    margin-top: rem(0px);
   }
   }
   
@@ -344,7 +353,7 @@
 
 
 .composition:hover .menu__list{
-right: rem(-260px);
+right: rem(-160px);
 opacity: 1;
 
 }

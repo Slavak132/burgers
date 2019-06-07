@@ -12,8 +12,10 @@
       font-size: rem(80px);
     }
     @include phones {
-      margin-top: -1.6rem;
+      margin-top: -1rem;
       margin-bottom: -0.4rem;
+      width: 65%;
+      margin-left: 21%;
     }
   }
 }
@@ -73,7 +75,7 @@
   @include phones {
     // margin-right: 0rem;
     // margin-right: rem(20px);
-    width: 57%;
+    width: 50%;
   }
 }
 }
@@ -90,7 +92,7 @@
   }
   @include phones {
     margin-top: rem(0px);
-    width: 105%;
+    width: 100%;
     
     
   }

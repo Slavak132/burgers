@@ -46,7 +46,8 @@
 		
 
 	}
-	// @include phones {
-		// font-size: rem(70px);
-	// }
+	@include phones {
+		margin-top: -10%;
+		font-size: rem(60px);
+	}
 }
