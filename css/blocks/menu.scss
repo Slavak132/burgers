@@ -20,8 +20,8 @@
     font-size: rem(72px);
 	}
 	@include phones{
-		;
+		margin-top: -6vh;
     margin-left: 1%;
-    // font-size: rem(25px);
+		
 	}
 }

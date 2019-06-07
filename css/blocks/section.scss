@@ -22,7 +22,7 @@
 	
 	}
 	@include phones {
-		margin-top: rem(20px);
+		// margin-top: rem(20px);
 		font-size: rem(70px);
 		// font-size: 5.2rem;
 		// height: 100vh;
@@ -47,7 +47,7 @@
 
 	}
 	@include phones {
-		margin-top: -10%;
-		font-size: rem(60px);
+		// margin-top: 2%;
+		font-size: 3.75rem;
 	}
 }

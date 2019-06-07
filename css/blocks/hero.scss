@@ -16,6 +16,11 @@
     flex-direction: column;
     // padding: 0 15%;
   }
+  @include phones {
+    // height: rem(230px);
+    align-items: center;
+  }
+
 }
 
 .hero__container {
@@ -26,18 +31,10 @@
   padding-bottom: 15%;
 }
 
-.hero__left,
-.hero__right {
-  // float: left;
-  width: 50%;
-  @include tablets {
-    // height: 38.375rem;
-    // width: 100%;
-  
-  }
-}
+
 
 .hero__left {
+  width: 50%;
   @include tablets {
     width: 100%;
   }
@@ -56,9 +53,10 @@
     padding: 0;
     width: 100%;
   }
-  // @include phones {
-  //   padding: 0 3%;
-  // }
+  @include phones {
+    // padding: 0 3%;
+    padding-top: rem(-115px);
+  }
 }
 
 .hero__desc {
@@ -88,8 +86,9 @@
   @include phones {
     // position: inherit;
     transform: translateX(0%);
-    margin-left: 10%;
-    margin-top: 10%;
+    // margin-top: 0rem;
+    // margin-bottom: 1em;
+    // margin-top: 10%;
 
   }
 
