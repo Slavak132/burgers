@@ -1,0 +1,128 @@
+.hero {
+  background: url("../img/background/texture.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  @include tablets {
+    padding-bottom: rem(100px);
+  }
+}
+
+
+
+
+.hero__content {
+  display: flex;
+  @include tablets {
+    flex-direction: column;
+    margin-top: 0%;
+    // padding: 0 15%;
+  }
+  @include phones {
+    margin-top: 6%;
+    // height: rem(230px);
+    align-items: center;
+  }
+
+}
+
+.hero__container {
+  display: flex;
+  // flex: 1;
+  // flex-direction: column;
+  justify-content: center;
+  @include phones {
+  // padding-bottom: 15%;
+  align-items: center;
+}
+}
+
+
+.hero__left {
+  width: 50%;
+  @include tablets {
+    width: 100%;
+  }
+  @include phones {
+    // height: rem(230px);
+    width: 100%;
+  }
+}
+
+.hero__right {
+  padding-top: rem(115px);
+  @include tablets {
+
+    margin-top: .5em;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  @include phones {
+    margin-top: 0em;
+    padding-top: rem(-115px);
+  }
+}
+
+.hero__desc {
+  font-size: rem(65px);
+  color: white;
+  @include lifehack;
+  font-size: rem(65px);
+  text-transform: lowercase;
+  line-height: 0.87em;
+  // margin-top: rem(5px);
+}
+
+.hero__img {
+  display: inline-block;
+  position: relative;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // max-width: 100%;
+
+
+  @include tablets {
+    position: inherit;
+    margin-top: -12%;
+    // margin-top: rem(-147px);
+    // transform: translateX(31%);
+    // margin-top: rem(80px);
+  }
+  @include phones {
+    width: 90%;
+    // position: inherit;
+    transform: translateX(0%);
+    // margin-top: 0rem;
+    // margin-bottom: 1em;
+    // margin-top: 10%;
+
+  }
+
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: rem(20px);
+  left: 50%;
+  width: rem(60px);
+  transform: translateX(-50%);
+  transition: .3s;
+  height: rem(60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    .down-arrow__icon {
+      margin-top: rem(-15px);
+      width: rem(45px);
+      height: rem(45px);
+    }
+  }
+}
+
+.down-arrow__icon {
+  width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  fill: #fff;
+}

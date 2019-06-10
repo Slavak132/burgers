@@ -1,0 +1,387 @@
+
+.burgers {
+	background: #f9b43b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+	background: -webkit-linear-gradient(top,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+	background: linear-gradient(to bottom,  #f9b43b 0%,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+	display: -webkit-box;
+  // display: flex;
+  
+	align-items: center;
+	justify-content: center;
+	.section__title {
+		margin-bottom: rem(110px);
+
+	}
+	.section__title_white{
+    // margin-left: rem(12px);
+		font-family: 'Gagalin-Regular';
+		font-size: rem(72px);
+		color: white;
+    line-height: 1;
+    margin-bottom: -2.375rem;
+    // margin-left: -18px;
+    @include tablets {
+      width: 4.8em;
+      // margin-bottom: rem(20px);
+      // margin-left: -6vh;
+      font-size: rem(58px);
+    }
+    @include phones {
+      font-size: rem(58px);
+      width: 10.2em;
+      margin-left: 0px;
+    }
+		}
+}
+.burgers__black{
+  width: 40em;
+/* left: 15em; */
+  // margin-left: -4em;
+  @include tablets{
+    width: 73%;
+  // margin-left: -7em;
+  // margin-top: -3em;
+}
+@include phones{
+    // margin-left: -3em;
+    // margin-top: -1em;
+  // margin-top: 0em;
+  width: 100%;
+  // left: 15em;
+  // margin-left: -4em;
+}
+}
+
+
+
+
+.slider-control {
+
+    position: absolute;
+    top: 47%;
+    display: block;
+    @include tablets {
+      top: 48%;
+    }
+    // z-index: 20;
+
+}
+
+.slider-control--left {
+  left: -5%;
+  @include tablets {
+    left: 0%;
+    z-index: 10;
+  }
+  @include phones{
+    left: 1%;
+    top: 45%;
+    z-index: 10;
+  }
+}
+
+.slider-control--rigth {
+    right: -5%;
+    @include tablets {
+      right: 0%;
+    }
+    @include phones{
+      right: 1%;
+      top: 45%;
+    }
+}
+
+
+
+.icon{
+  width: 85%;
+  margin-left: -6%;
+  // margin-left: rem(20px);
+  @include tablets {
+    // width: 50vh;
+    // margin-left: 0px;
+}
+@include phones{
+  width: 100%;
+}
+}
+
+
+.composition{
+  // margin-top: 1em;
+  display: flex;
+  // margin-left: rem(-31px);
+  @include tablets {
+    width: 81%;
+    margin-top: 1em;
+    margin-left: auto;
+    // margin-left: -5em;
+    // margin-bottom: 3em;
+
+  }
+  @include phones {
+    width: 100%;
+    margin-top: 0;
+    // width: 78%;
+    // margin-left: 0%;
+    // margin-bottom: 2em;
+  }
+}
+.consists{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url(../img/orangburger.png);
+
+  background-repeat: no-repeat;
+  // background-size: 100%;
+
+  width: rem(100px);
+  height: rem(100px);
+  @include tablets {
+    background-size: 85%;
+    // margin-top: %;
+  }
+  @include phones {
+   // margin-left: 0%;
+    // width: 78%;
+    // margin-left: 0%;
+    // margin-bottom: 2em;
+  }
+  }
+
+.kkal{ 
+  // margin-left: -32px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/kkal.png);
+  // background-position-y: 10px;
+  // background-position-x: 19px;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  // opacity: .8; 
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: rem(70px);
+  height: rem(80px);
+  @include tablets {
+    display: none;
+  }
+}
+
+.kkal1{ 
+  display: none;
+ 
+
+  @include tablets {
+  margin-left: 55%;
+  display: flex;
+  background-image: url(../img/kkal.png);
+  background-repeat: no-repeat;
+  width: rem(70px);
+  }
+  @include phones {
+    margin-left: 50%;
+  }
+  
+}
+
+.burgers__block{
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  // margin-left: vh;
+  justify-content: center;
+  @include tablets {
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+    // margin: 0 auto;
+    // text-align: center;
+
+    
+  }
+  @include phones {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    margin-top: 0%;
+  }
+
+  .burgers__black--description{
+    margin-top: rem(41px);
+    width: 32em;
+    display: flex;
+    // margin-left: -17px;
+    font-size: rem(14px);
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu-Light';
+    font-weight: 300;
+    font-style: normal;
+    // height: 120px;
+    align-items: flex-end;
+    @include tablets {
+    margin-top: 11%;
+    align-items: center;
+    width: 35em;
+    }
+    @include phones {
+      width: 26em;
+      margin-top: 16%;
+      // margin-left: -10px;
+    }
+    
+}
+}
+
+.price{
+  margin-top: rem(10px);
+  // display: flex;
+  // margin-left: -5%;
+  @include tablets {
+    font-size: 66%;
+    // margin-bottom: 2%;
+    // margin-top: 1%;
+  }
+  @include phones{
+    margin-left: -1%;
+    font-size: 0.625rem;
+    margin-top: 1.7rem;
+    margin-bottom: 25%;
+  }
+  }
+  
+    .burgers__black--price{
+    margin-bottom: rem(20px);
+    display: flex;
+    flex-flow: nowrap;
+    align-items: baseline;
+    // margin-bottom: 10px;
+    font-size: 5.5em;
+    color: #b24c2b;
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    
+    font-style: normal;
+    .rubles{
+    flex-flow: row;
+    margin-left: rem(5px);
+    font-size: rem(28px);
+    color: #b24c2b;
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    font-style: normal;
+    @include tablets {
+      margin-left: rem(7px);
+    }
+    @include phones{
+      
+      font-size: rem(28px);
+    }
+
+    }
+    .black__btn{
+      flex-flow: row;
+      margin-left: 5%;
+      color: #b24c2b;
+      font-size: rem(14px);
+      text-decoration: none; /* убираем у ссылки нижнее подчеркивание*/
+      text-transform:uppercase;
+      justify-content: space-between;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      @include tablets {
+        margin-left: 9%;
+      }
+      @include phones{
+        margin-left: rem(50px);
+        font-size: rem(16px);
+        margin-bottom: rem(30px);
+      }
+      
+  }
+  .black__btn:hover{
+    display: flex;
+    display: inline-block/block/flex;
+    cursor: pointer;
+    outline:none; /* убираем обводку у кнопки при наведении*/
+    border-radius: rem(5px);
+    flex-flow: row;
+    color: white;
+    text-transform:uppercase;
+    justify-content: space-between;
+    padding: rem(5px) rem(10px);
+    border: 1px solid transparent;
+    background: #b24c2b;
+  }
+}
+
+
+.burgers__block:last-child{
+  // margin-left: 25px;
+}
+
+
+.menu__list{
+  display: flex;
+  // flex-flow: initial;
+  // justify-content: center;
+  left: rem(-155px);
+  margin-left: rem(240px);
+  font-weight: bold;
+  // list-style: none; /* Убираем исходные маркеры */
+  background-color: #fff;
+  border-radius: 5px;
+  width: rem(270px);
+  height: rem(330px);
+  padding: rem(10px) rem(10px) rem(10px) rem(10px);
+  border: 1px solid rgb(253, 253, 253);
+  box-shadow: 3px -3px 5px rgba(95, 92, 92, 0.61);
+  right: 100%;
+  right: rem(-2000px);
+  opacity: 0;
+  position: absolute;
+  transition: opacity .3s;
+  animation: myAnimation .3s;
+  word-spacing: rem(50px);
+  @include tablets {
+
+  margin-left: 22rem;
+  }
+  @include phones {
+    margin-left: 13rem;
+    // opacity: .7;
+    }
+} 
+.element{
+  text-align: center;
+  
+}
+.iconw{
+  width: 20%;
+  height: 20%;
+  margin-right: 10%;
+
+}
+
+
+
+
+.composition:hover .menu__list{
+right: rem(-160px);
+opacity: 1;
+
+}
+
+.menu__list::before{
+content: '';
+position: absolute;
+bottom: 90%;
+// right: 0;
+width: 90%;
+height: rem(15px);
+}

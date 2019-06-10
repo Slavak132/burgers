@@ -1,0 +1,85 @@
+.team {
+	background: url("../img/background/campani.jpg") 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	@include tablets {
+	// height: 63%;
+	}
+	.section__title {
+		font-size: 3.8rem;
+	}
+		@include phones{
+		// margin-bottom: 6%;	
+		}
+		// margin-bottom: 3%;
+	
+
+	@include tablets {
+		margin-top: 1vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(#2f3234, .93);
+		}
+	}
+}
+
+.team__section{
+	@include tablets {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+}
+
+.section__title--team{
+	@include tablets {
+		margin-top: 13vh;
+	// display: flex;
+	// position: absolute;
+	// margin-top: -2.5em;
+	// margin-bottom: 3%;
+	// font-size: rem(75px);
+}
+@include phones{
+	margin-top: 15vh;	
+	font-size: rem(55px);
+	}
+}
+
+
+.team__section {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	background: rgba(#2f3234, .93);
+	padding: 7% 5% 0 0;
+	text-align: center;
+
+
+	@include tablets {
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		text-align: center;
+		background: transparent;
+		padding: 0;
+	}
+}
+

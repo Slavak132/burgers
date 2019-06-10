@@ -1,0 +1,140 @@
+.accordion {
+  display: flex;
+  justify-content: flex-end;
+  color: inherit;
+  @include phones {
+  font-size: rem(16px);
+  width: 100%;
+  }
+}
+.accordion-item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  @include tablets{
+		// margin-left: 2vh;
+
+	}
+}
+.accordion-item--active::before {
+  content: "";
+  width: 39.375rem;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: .75;
+  transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
+}
+.bg{
+  position:absolute;
+  background: rgba(2, 2, 2, 0.61);
+  width: 100%;
+  height:100%;
+  @include tablets {
+  
+    // width: 4.75rem;
+  	width: 100%;
+  }
+}
+.accordion__img {
+  position: relative;
+  
+  width: rem(80px);
+  background-size: 200% 100%;
+  &.accordion__img--meat{
+    background-image: url(../img/background/Formeateater.jpg);
+  }
+  &.accordion__img--dieta{
+    background-image: url(../img/background/dietary.jpg);
+  }
+  &.accordion__img--dieta{
+    background-image: url(../img/background/vegetarian.jpg);
+  }
+
+  @include tablets {
+    // width: 4.75rem;
+    width: rem(87px);
+  }
+  @include phones{
+    width: 5.75rem;
+  }
+}
+
+.accordion__pic {
+  width: rem(100px);
+  // width: 2.25rem;
+  height: 100%;
+  object-fit: cover;
+  @include tablets {
+    width: 4.25rem;
+  }
+  
+}
+
+.accordion__text {
+  position: absolute;
+  bottom: 5%;
+  left: -5%;
+  transform: rotate(180deg);
+  font-weight: 500;
+  color: inherit;
+  writing-mode: vertical-rl;
+  font-family: 'Gagalin-Regular';
+  font-weight: 300;
+  font-style: normal;
+  font-size: rem(40px);
+  color: white;
+  bottom: 6%;
+  left: -29%;
+  @include tablets {
+    bottom: 3%;
+    left: -27%;
+  }
+  @include phones{
+    left: -30%;
+    bottom: 7.5%;
+  }
+}
+.accordion__description {
+  font-family: 'Ubuntu';
+  // font-weight: 300;
+  font-style: normal;
+  font-size: rem(14px);
+  color: white;
+
+  position: relative;
+  width: 0;
+  height: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  z-index: 10;
+  @include tablets {
+    font-size: rem(12px);
+
+  }
+}
+
+.accordion-item--active .accordion__description {
+  width: 26.875rem;
+  padding: 3.5rem 1.625rem;
+  padding-top: 3.5rem;
+  padding-right: 1.625rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1.625rem;
+}
+
+.accordion__text--titles{
+  @include tablets {
+    font-size: rem(44px);
+  }
+}
+
+
+
+
+
+

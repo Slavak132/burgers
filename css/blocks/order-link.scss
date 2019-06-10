@@ -1,0 +1,9 @@
+.order-link {
+	width: 100%;
+	// @include inlineblock(middle);
+	@include tablets {
+	padding: rem(9px) 0;
+	margin-left: -45%;
+	min-width: rem(90px);	
+	}
+}
