@@ -6,13 +6,16 @@
 	// height: 63%;
 	}
 	.section__title {
+		font-size: 3.8rem;
+	}
 		@include phones{
 		// margin-bottom: 6%;	
 		}
 		// margin-bottom: 3%;
-	}
+	
 
 	@include tablets {
+		margin-top: 1vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -29,8 +32,8 @@
 			background: rgba(#2f3234, .93);
 		}
 	}
-
 }
+
 .team__section{
 	@include tablets {
 	width: 90%;
@@ -51,7 +54,7 @@
 	// font-size: rem(75px);
 }
 @include phones{
-	margin-top: 11vh;	
+	margin-top: 15vh;	
 	font-size: rem(55px);
 	}
 }

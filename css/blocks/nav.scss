@@ -1,11 +1,14 @@
 .nav {
+	
 	@include inlineblock(middle);
+	
 
 	@include tablets {
 		display: none;
 	}
 
 	&_hamburger {
+		
 		width: auto;
 
 		.nav__item {
@@ -27,6 +30,7 @@
 }
 
 .nav__list {
+	overflow: hidden;
 	@include tablets {
 		text-align: center;
 	}
@@ -45,6 +49,7 @@
 	}
 
 	&:after {
+		
 		content: "";
 		@include inlineblock(middle);
 		width: rem(4px);
@@ -56,6 +61,7 @@
 }
 
 .nav__link {
+	
 	@include inlineblock(middle);
 	font-size: rem(13px);
 	text-transform: uppercase;
@@ -64,6 +70,7 @@
 	@include ubuntu(medium);
 
 	&:hover {
+		
 		text-decoration: underline;
 	}
 }

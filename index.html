@@ -12,7 +12,7 @@
     <div class="wrapper">
       <div class="maincontent">
         <section id="hero" class="section hero">
-          <div class="container">
+          <div class="container container__hero">
             <header class="header">
               <div class="header__logo">
                 <a class="logo" href="#">
@@ -42,7 +42,7 @@
                 </nav>
               </div>
               <div class="header__links">
-                <a class="order-link btn" href="#order">Заказать</a>
+                <a class="order-link btn" href="#form-block">Заказать</a>
               </div>
               <div class="burger-menu"></div>
             </header>
@@ -107,10 +107,10 @@
             </ul>
           </div>
 
-          <a class="down-arrow" href="#burgers">
+          <!-- <a class="down-arrow" href="#burgers">
             <svg class="down-arrow__icon">
               <use xlink:href="./img/sprite/sprite.svg#arrow-down" fill="#E55028"></use>
-            </svg></a>
+            </svg></a> -->
         </section>
         <section id="burgers" class="section burgers">
           <div class="container container__burgers">
@@ -251,10 +251,10 @@
             </a>
 
           </div>
-            <a class="down-arrow" href="#team">
+            <!-- <a class="down-arrow" href="#team">
               <svg class="down-arrow__icon">
                 <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-              </svg></a>      
+              </svg></a>       -->
       
       
         </section>
@@ -309,10 +309,10 @@
                     </li>
             </ul>
           </div>
-          <a class="down-arrow" href="#menu">
+          <!-- <a class="down-arrow" href="#menu">
             <svg class="down-arrow__icon">
               <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-            </svg></a>
+            </svg></a> -->
         </section>
         <section id="menu" class="section menu">
           <div class="section__title section__title_white menu__title">Меню</div>
@@ -348,10 +348,10 @@
                   </p>
             </li>
           </ul>
-          <a class="down-arrow" href="#reviews">
+          <!-- <a class="down-arrow" href="#reviews">
             <svg class="down-arrow__icon">
               <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-            </svg></a>
+            </svg></a> -->
         </section>
         <section id="reviews" class="section reviews">
           <ul class="reviews__list">
@@ -436,106 +436,121 @@
               </div>
             </li>
           </ul>
-          <a class="down-arrow" href="#job">
+          <!-- <a class="down-arrow" href="#job">
             <svg class="down-arrow__icon">
               <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-            </svg></a>
+            </svg></a> -->
         </section>
         <section id="job" class="section job">
           <div class="container">
-            <h2 class="ssection-title section__title_black ">как мы работаем</h2>
-      
-            <div class="video">
-              <!-- width="750" height="350" -->
-              <iframe width="750" height="350" src="https://www.youtube-nocookie.com/embed/aLZnEJ3I_ws?start=30"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
+            <h2 class="section__title section__title_job section__title_black ">как мы работаем</h2>
 
+            <div class="video__player">
+              <video id="video" class="video__poster" poster="./img/background/video.png">
+                <source src="./img/video/burgers.mp4" type="video/mp4">
+              </video>
+              <svg class="video__play play">
+                <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
+              </svg>
+            </div>
+            <div class="video__toolbar">
+              <div class="video__duration">
+                <svg class="video__toolbar-play play">
+                  <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
+                </svg>
+                <div id="timer" class="video__timer">
+                </div>
+                <input type="range" id="duration-time" class="video__length" min="0" max="103.004">
+              </div>
+              <div class="video__volume">
+                <svg class="video__volume-icon">
+                  <use xlink:href="./img/sprite/sprite.svg#play-volume"></use>
+                </svg>
+                <input type="range" id="volume-level" class="video__volume-level" min="0" max="10">
+              </div>
+            </div>
           </div>
-          <a class="down-arrow" href="#order">
+          <!-- <a class="down-arrow" href="#order">
             <svg class="down-arrow__icon">
               <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-            </svg></a>
-      
+            </svg></a> -->
         </section>
-        <section id="order" class="section order">
-          <div class="container container__order">
-            <div class="section__title">Закажите доставку</div>
-            <div class="order__form">
-              <form class="order__form-tag" id="order-form">
-                <div class="order__form-col">
-                  <div class="order__form-row order__form-row_double">
-                    <label class="order__form-block">
-                      <div class="order__form-label">Имя</div>
-                      <input class="order__form-input" name="name" type="text" placeholder="">
-                    </label>
-                    <label class="order__form-block">
-                      <div class="order__form-label">Телефон</div>
-                      <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
-                    </label>
-                  </div>
-                  <div class="order__form-row">
-                    <label class="order__form-block">
-                      <div class="order__form-label">Улица</div>
-                      <input class="order__form-input" name="street" type="text" placeholder="">
-                    </label>
-                  </div>
-                  <div class="order__form-row order__form-row_quatro">
-                    <label class="order__form-block">
-                      <div class="order__form-label">Дом</div>
-                      <input class="order__form-input" name="home" type="text" placeholder="">
-                    </label>
-                    <label class="order__form-block">
-                      <div class="order__form-label">Корпус</div>
-                      <input class="order__form-input" name="part" type="text" placeholder="">
-                    </label>
-                    <label class="order__form-block">
-                      <div class="order__form-label">Квартира</div>
-                      <input class="order__form-input" name="appt" type="text" placeholder="">
-                    </label>
-                    <label class="order__form-block">
-                      <div class="order__form-label">Этаж</div>
-                      <input class="order__form-input " name="floor" type="text" placeholder="">
-                    </label>
-                  </div>
+
+        <section id="form-block" class="form-block section">
+                <div class="form__container container">
+                  <h2 class="section__title section__title_order">Закажите доставку</h2>
+                  <form action="" method="POST" class="form">
+                    <div class="form__client">
+                      <div class="form__adress-block">
+                        <div class="form__row">
+                          <label class="form__name form-label">
+                            <h5 class="form__name-title form-titles">Имя</h5>
+                            <input type="text" class="form__name-input form-input" placeholder="Иван" name="name" required="">
+                          </label>
+                          <label class="form__phone form-label">
+                            <h5 class="form__phone-title form-titles">Телефон</h5>
+                            <input type="tel" class="form__phone-input form-input" placeholder="+7(931)315-17-17" name="phone" required="">
+                          </label>
+                        </div>
+                        <div class="form__row">
+                          <label class="form__street form-label">
+                            <h5 class="form__street-title form-titles">Улица</h5>
+                            <input type="text" class="form__street-input form-input" placeholder="пр. Славы" name="street" required="">
+                          </label>
+                        </div>
+                        <div class="form__row">
+                          <label class="form__home form-label">
+                            <h5 class="form__home-title form-titles">Дом</h5>
+                            <input type="text" class="form__home-input form__digit form-input" placeholder="7" name="home" required="">
+                          </label>
+                          <label class="form__build form-label">
+                            <h5 class="form__build-title form-titles">Корпус</h5>
+                            <input type="text" class="form__build-input form-input" placeholder="" name="build">
+                          </label>
+                          <label class="form__flat form-label">
+                            <h5 class="form__flat-title form-titles">Квартира</h5>
+                            <input type="text" class="form__flat-input form__digit form-input" placeholder="" name="flat">
+                          </label>
+                          <label class="form__floor form-label">
+                            <h5 class="form__floor-title form-titles">Этаж</h5>
+                            <input type="text" class="form__floor-input form__digit form-input" placeholder="" name="floor">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__pay-block">
+                        <label for="" class="form__comments">
+                          <h5 class="form__comments-title form-titles">Комментарий</h5>
+                          <textarea id="" class="form__comments-textarea" placeholder="надеимся на лайк" name="comments" required=""></textarea>
+                        </label>
+                        <div class="form__radio-block">
+                          <label for="change" class="form__change">
+                            <input type="radio" id="change" class="form__change-input form-radio" name="pay">
+                            <div class="form__change-div"></div>
+                            <h5 class="form__change-title form-titles">Потребуется сдача</h5>
+                          </label>
+                          <label for="card" class="form__card">
+                            <input type="radio" id="card" class="form__card-input form-radio" name="pay" checked="">
+                            <div class="form__card-div"></div>
+                            <h5 class="form__card-title form-titles">Оплата по карте</h5>
+                          </label>
+                        </div>
+                        <div class="form__check-block">
+                          <label for="call" class="form__call">
+                            <input type="checkbox" id="call" class="form__call-input form-checkbox" name="call">
+                            <div class="form__call-div"></div>
+                            <h5 class="form__call-title form-titles">Не перезванивать</h5>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__button-block">
+                      <button type="submit" class="button form__button">Заказать</button>
+                      <button type="reset" class="form__refresh form-titles">Очистить</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="order__form-col">
-                  <div class="order__form-row">
-                    <label class="order__form-block">
-                      <div class="order__form-label">Комментарий</div>
-                      <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
-                    </label>
-                  </div>
-                  <div class="order__form-buttons">
-                    <div class="order__form-row">
-                      <label class="order__radio">
-                        <input class="order__radio-elem" name="payment" type="radio">
-                        <div class="order__radio-fake"></div>
-                        <div class="order__radio-title">Потребуется сдача</div>
-                      </label>
-                      <label class="order__radio">
-                        <input class="order__radio-elem" name="payment" type="radio">
-                        <div class="order__radio-fake"></div>
-                        <div class="order__radio-title">Оплата по карте</div>
-                      </label>
-                    </div>
-                    <div class="order__form-row">
-                      <label class="order__radio order__radio_checkbox">
-                        <input class="order__radio-elem" name="callback" type="checkbox">
-                        <div class="order__radio-fake"></div>
-                        <div class="order__radio-title">Не перезванивать</div>
-                      </label>
-                    </div>
-                    <div class="order__form-row">
-                      <input class="order__form-button" name="" type="submit" value="Заказать">
-                      <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+              </section>
+
         </section>
         <section class="section map">
         
@@ -588,12 +603,18 @@
       <li class="fixed-menu__item"><a class="fixed-menu__link" href="#" ></a></li>
       <li class="fixed-menu__item"><a class="fixed-menu__link" href="#" ></a></li>
     </ul>
+    <div class="modal">
+      <h2 class="modal__title"></h2>
+      <div class="modal__close"></div>
+    </div>
     <!-- <script https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script> -->
     <script src="./js/slider_menu.js"></script>
     <script src="./js/hamburger_menu.js"></script>
     <script src="./js/accordion_horisont.js"></script>
     <script src="./js/accordion-menu-vertical.js"></script>
     <script src="https://api-maps.yandex.ru/2.1?apikey=<d4aa209b-3831-4ac1-8d1d-25fdd63449e8>&lang=ru_RU" type="text/javascript"></script>
-    <script src="./js/map.js" type="text/javascript"></script>
+    <script src="./js/jobplayer.js" type="text/javascript"></script>
+    <script src="./js/send-form.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 .burger-menu {
+
 	display: none;
 	@include tablets {
 	margin-right: 12px;
@@ -14,6 +15,8 @@
 }
 
 .burger-menu::before {
+
+
 	@include tablets {
 	content: "";
 	width: rem(24px);
@@ -28,6 +31,7 @@
 }
 }
 .burger-menu--active::before {
+
 	@include tablets {
 	content: "";
 	width: 24px;
@@ -43,6 +47,7 @@
 }
 
 .burger-menu::after {
+	
 	display: none;
 	@include tablets {
 	content: "";
@@ -60,6 +65,7 @@
 
 
 .burger-menu--active {
+
 	display: flex;
 	cursor: pointer;
 	@include tablets {
@@ -76,6 +82,7 @@
 }
 }
 .burger-menu--active::after {
+	
 	// @include tablets {
 	content: "";
 	width: 34px;
@@ -90,6 +97,7 @@
 // }
 }
 .nav {
+	
 	display: flex;
 	flex: 1;
 	padding: 0 10%;
@@ -126,23 +134,29 @@
 
 
 .nav__list{
+	
 	display: flex;
-	flex: .8;
+	flex: 1;
 	justify-content: space-between;
 	font-size: rem(14px);
 	
 }
 
 .nav__list-active{
+
 	@include tablets {
 		flex-direction: column;
     font-size: 1.1em;
     line-height: .5;
     text-align: center;
 }
+	body{
+		display: none;
+	}
 }
 
 .nav__item{
+
 	transition: .3s ease-in-out;
 }
 .nav__link{

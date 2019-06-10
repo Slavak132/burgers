@@ -6,18 +6,23 @@
   align-items: center;
   background-position: center center;
   .section__title {
-    margin-bottom: rem(40px);
+    margin-bottom: 1.5rem;
+    
     @include tablets {
       margin-top: -4rem;
       font-size: rem(80px);
+      margin-bottom: -0.5rem;
     }
     @include phones {
-      margin-top: -1rem;
-      margin-bottom: -0.4rem;
-      width: 65%;
-      margin-left: 21%;
+      // margin-top: -1rem;
+      // margin-bottom: -0.4rem;
+      width: 100%;
+      margin-left: 10%;
     }
   }
+}
+.container_best{
+  // margin-top: -6%;
 }
 
 .best__icon-pic {
@@ -33,7 +38,9 @@
     // transform: nonvvve;
   }
   @include phones {
-    width: 50%
+
+    width: 80%;
+    // height: 65%;
   }
 
 }
@@ -42,9 +49,13 @@
   display: flex;
   @include tablets {
     margin-top: rem(8px);
+    padding: 0 36px;
   }
   @include phones {
+    width: 100%;
     flex-direction: column;
+    margin-top: rem(0px);
+    margin-left: -25%;
   }
   
 }
@@ -60,11 +71,10 @@
   }
   @include phones {
     flex-direction: row;
-    width: 107%;
-    // padding: 0px;
-    margin-left: -38px;
-    // margin-bottom: 1.5625rem;
-    margin-bottom: rem(50px);
+    width: 100%;
+    padding: 0px;
+    
+    // margin-bottom: rem(50px);
   }
 }
 
@@ -75,7 +85,7 @@
   @include phones {
     // margin-right: 0rem;
     // margin-right: rem(20px);
-    width: 50%;
+    width: 90%;
   }
 }
 }
@@ -91,8 +101,9 @@
     width: 100%;
   }
   @include phones {
-    margin-top: rem(0px);
-    width: 100%;
+    // margin-top: rem(0px);
+    width: 70%;
+    
     
     
   }
@@ -102,11 +113,12 @@
   text-align: center;
   font-size: rem(24px);
   @include tablets {
-  font-size: rem(26px);
+  font-size: rem(20px);
   }
   @include phones {
     margin-top: rem(0px);
     text-align: left;
+    font-size: rem(20px);
     
   }
   @include lifehack;

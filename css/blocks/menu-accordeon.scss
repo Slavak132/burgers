@@ -36,6 +36,7 @@
   height:100%;
   @include tablets {
   
+    // width: 4.75rem;
   	width: 100%;
   }
 }
@@ -55,8 +56,8 @@
   }
 
   @include tablets {
-  
-    width: rem(85px);
+    // width: 4.75rem;
+    width: rem(87px);
   }
   @include phones{
     width: 5.75rem;

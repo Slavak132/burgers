@@ -8,20 +8,6 @@
   // padding: rem(2px) 0;
 }
 
-.footer__container {
-  display: flex;
-  flex-direction: row;
-	align-items: center;
-	@include tablets {
-		width: 92%;
-		height: rem(65px);
-  }
-
-  @include phones {
-		flex-direction: column;
-		height: rem(132px);
-  }
-}
 
 .footer__col {
 	width: 50%;
