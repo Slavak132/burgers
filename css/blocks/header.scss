@@ -6,10 +6,11 @@
 	align-items: center;
 	@include tablets {
 		
-		width: 93%;
+		width: 109%;
 	}
 	@include phones {
 		width: 100%;
+		
 	}
 }
 

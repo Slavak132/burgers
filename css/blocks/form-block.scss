@@ -21,13 +21,7 @@
     }
   }
 }
-.form__container {
-  position: relative;
-  @include tablets{
-    height: 80%;
 
-  }
-}
 .container {
   max-width: 1100px;
   width: auto;
@@ -37,6 +31,16 @@
   flex-direction: column;
   align-items: center;
   // justify-content: center;
+  &.form__container {
+    position: relative;
+    @include tablets{
+      height: 80%;
+  
+    }
+    @include phones {
+      padding: 0;
+    }
+  }
 }
 // .form__container::before {
 //   content: "";
@@ -58,7 +62,7 @@
   z-index: 40;
 }
 .form__client {
-  margin-bottom: 8.26%;
+  margin-bottom: 6.26%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -77,6 +81,9 @@
   @include tablets{
 
     width: 73%;
+  }
+  @include phones{
+    width: 100%;
   }
 }
 .form__row {
@@ -144,6 +151,9 @@ label {
   @include tablets{
     width: 73%;
   }
+  @include phones{
+    width: 100%;
+  }
 }
 .form__comments {
   width: 100%;
@@ -168,6 +178,9 @@ textarea {
 .form__radio-block {
   display: flex;
   margin-bottom: 1.74%;
+  @include phones{
+    justify-content: center;
+  }
 }
 .form__change {
   margin-right: 2.4%;
@@ -244,6 +257,9 @@ label {
 .form__call {
   display: flex;
   align-items: center;
+  @include phones{
+    justify-content: center;
+  }
 }
 input[type="checkbox"] {
   -webkit-appearance: checkbox !important;
@@ -285,6 +301,11 @@ input[type="checkbox"] {
   color: white;
   @include tablets{
     width: 85%;
+  }
+  @include phones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 }
 .form__button {
@@ -331,8 +352,8 @@ button {
 }
 .modal {
 
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   padding: 0 3%;
   position: fixed;
   top: 50%;
@@ -344,11 +365,21 @@ button {
   font-family: 'Lifehack-Medium';
   font-size: rem(29px);
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(253, 252, 252);
   border-radius: 20px;
-  border: 5px solid rgb(255, 0, 0);
-  background:  #eba30ac9;
+  border: 5px solid #eba30ac9;
+  background:  #524f48;
   z-index: 50;
+  @include tablets{
+    font-size: rem(19px);
+    width: 50%;
+    height: 30%;
+  }
+  @include phones{
+    font-size: rem(20px);
+    width: 70%;
+    height: 40%;
+  }
 }
 .modal__close {
   display: flex;
@@ -360,10 +391,18 @@ button {
   height: 6px;
   display: block;
   border-radius: 10px/10px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   transform: rotate(45deg);
   transition: transform 1s ease-in-out;
   z-index: 50;
+  @include tablets{
+    width: 20px;
+    height: 4px;
+  }
+  @include phones{
+    width: 18px;
+    height: 4px;
+  }
 }
 .modal__close::before {
   content: "";
@@ -376,5 +415,13 @@ button {
   border-radius: 10px/10px;
   transform: translate(-50%, -50%) rotate(90deg);
   transition: transform 1s ease-in-out;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 254, 254);
+  @include tablets{
+    width: 20px;
+    height: 4px;
+  }
+  @include phones{
+    width: 18px;
+    height: 4px;
+  }
 }

@@ -17,13 +17,11 @@
       // margin-top: -1rem;
       // margin-bottom: -0.4rem;
       width: 100%;
-      margin-left: 10%;
+      // margin-left: 10%;
     }
   }
 }
-.container_best{
-  // margin-top: -6%;
-}
+
 
 .best__icon-pic {
   width: 35%;
@@ -32,7 +30,7 @@
     max-width: 100%;
   }
   @include tablets {
-    width: 42%;
+    width: 50%;
     
     // position: static;
     // transform: nonvvve;
@@ -48,14 +46,17 @@
 .best__list {
   display: flex;
   @include tablets {
-    margin-top: rem(8px);
+    margin-top: 2.5rem;
     padding: 0 36px;
   }
   @include phones {
     width: 100%;
     flex-direction: column;
     margin-top: rem(0px);
-    margin-left: -25%;
+    height: 100%;
+    // justify-content: space-between;
+    // margin-left: -25%;
+    padding: 0;
   }
   
 }
@@ -67,14 +68,15 @@
   flex-direction: column;
   @include tablets {
     width: 100%;
+    padding: 0;
     margin-bottom: rem(25px);
   }
   @include phones {
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     padding: 0px;
     
-    // margin-bottom: rem(50px);
+    margin-bottom: rem(0px);
   }
 }
 
@@ -113,12 +115,13 @@
   text-align: center;
   font-size: rem(24px);
   @include tablets {
-  font-size: rem(20px);
+  font-size: rem(24px);
   }
   @include phones {
     margin-top: rem(0px);
     text-align: left;
     font-size: rem(20px);
+    font-size: 1.5rem;
     
   }
   @include lifehack;

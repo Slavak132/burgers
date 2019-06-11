@@ -12,6 +12,10 @@
 .footer__col {
 	width: 50%;
 	margin-bottom: rem(15px);
+	
+	@include tablets {
+		margin-bottom: rem(0px);
+	}
 
 	@include phones {
 		

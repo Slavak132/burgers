@@ -4,6 +4,7 @@
   align-items: center;
 
 }
+
 .section__title_black{
   font-family: 'Gagalin-Regular';
   font-size: rem(72px);
@@ -27,9 +28,13 @@
 
 .video__player {
   position: relative;
+  width: 70.22%;
   line-height: 0;
+  @include tablets {
+    width: 109%;
+  }
   @include phones{
-    width: 100%;
+    width: 96%;
     // margin-left: 10%;
     }
 }
@@ -42,8 +47,8 @@
   object-fit: cover; }
 
 .video__play {
-  width: 15.375rem;
-  height: 22.125rem;
+  width: 3.375rem;
+  // height: 22.125rem;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -59,13 +64,19 @@
   display: none; }
 
 .video__toolbar {
-  width: 100%;
+  margin-top: -1px;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #3e3e3e;
+  @include tablets{
+    margin-top: -1px;
+    width: 109%
+  }
   @include phones{
-  width: 100%;
+    margin-top: -1px;
+  width: 96%;
   // margin-left: 10%;
   }
 }

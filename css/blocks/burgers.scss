@@ -22,10 +22,10 @@
     margin-bottom: -2.375rem;
     // margin-left: -18px;
     @include tablets {
-      width: 4.8em;
+      // width: 4.8em;
       // margin-bottom: rem(20px);
       // margin-left: -6vh;
-      font-size: rem(58px);
+      font-size: rem(72px);
     }
     @include phones {
       font-size: rem(58px);
@@ -39,7 +39,7 @@
 /* left: 15em; */
   // margin-left: -4em;
   @include tablets{
-    width: 73%;
+    width: 100%;
   // margin-left: -7em;
   // margin-top: -3em;
 }
@@ -113,9 +113,9 @@
   display: flex;
   // margin-left: rem(-31px);
   @include tablets {
-    width: 81%;
-    margin-top: 1em;
-    margin-left: auto;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2em;
     // margin-left: -5em;
     // margin-bottom: 3em;
 
@@ -140,7 +140,7 @@
   width: rem(100px);
   height: rem(100px);
   @include tablets {
-    background-size: 85%;
+    background-size: 100%;
     // margin-top: %;
   }
   @include phones {
@@ -177,7 +177,7 @@
  
 
   @include tablets {
-  margin-left: 55%;
+  // margin-left: 55%;
   display: flex;
   background-image: url(../img/kkal.png);
   background-repeat: no-repeat;
@@ -196,9 +196,11 @@
   // margin-left: vh;
   justify-content: center;
   @include tablets {
+    justify-content: start;
     width: 100%;
+    height: 50%;
     align-items: center;
-    margin-top: 0%;
+    // margin-top: 0%;
     // margin: 0 auto;
     // text-align: center;
 
@@ -224,9 +226,10 @@
     // height: 120px;
     align-items: flex-end;
     @include tablets {
-    margin-top: 11%;
+    font-size: rem(15px);
+    justify-content: space-around;
     align-items: center;
-    width: 35em;
+    width: 36em;
     }
     @include phones {
       width: 26em;
@@ -242,7 +245,8 @@
   // display: flex;
   // margin-left: -5%;
   @include tablets {
-    font-size: 66%;
+    margin-bottom: 3em;
+    // font-size: 66%;
     // margin-bottom: 2%;
     // margin-top: 1%;
   }
@@ -321,9 +325,6 @@
 }
 
 
-.burgers__block:last-child{
-  // margin-left: 25px;
-}
 
 
 .menu__list{
