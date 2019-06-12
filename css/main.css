@@ -280,7 +280,7 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 1099px) { .icon { width: 50%; } }
 
-@media screen and (max-width: 767px) { .icon { width: 100%; } }
+@media screen and (max-width: 767px) { .icon { width: 50%; } }
 
 .composition { display: flex; }
 
