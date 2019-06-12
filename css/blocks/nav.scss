@@ -30,9 +30,10 @@
 }
 
 .nav__list {
-	overflow: hidden;
+	// overflow: hidden;
 	@include tablets {
 		text-align: center;
+	
 	}
 }
 

@@ -1,5 +1,6 @@
 .burger-menu {
 
+	
 	display: none;
 	@include tablets {
 	margin-right: 12px;
@@ -31,6 +32,7 @@
 }
 }
 .burger-menu--active::before {
+
 
 	@include tablets {
 	content: "";
@@ -65,7 +67,7 @@
 
 
 .burger-menu--active {
-
+	
 	display: flex;
 	cursor: pointer;
 	@include tablets {
@@ -109,7 +111,7 @@
 
 
 .nav__active {	
-
+	
 	// @include tablets {
 	flex-direction: column;
 	font-size: 2.25em;
@@ -137,12 +139,13 @@
 	
 	display: flex;
 	flex: 1;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-size: rem(14px);
 	
 }
 
 .nav__list-active{
+	// overflow: hidden;
 
 	@include tablets {
 		flex-direction: column;

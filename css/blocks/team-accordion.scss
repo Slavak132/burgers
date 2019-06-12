@@ -6,8 +6,8 @@
 	width: 100%;
 	margin-left: 7em;
 	@include tablets {
-		margin-top: 2%;
-		margin-left: 2em;
+		margin-top: 3%;
+		margin-left: 0em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +27,13 @@
 	display: none;
 	// overflow: hidden;
 	border-radius: 50%;
-	margin-top: rem(77px);
+	margin-top: rem(10px);
 	width: rem(100px);
 	height: rem(100px);
+	@include phones{
+		margin-top: rem(11px);
+		
+	}
 }
 
 .team-list__pic {
@@ -49,6 +53,7 @@
 	@include phones {
 		margin-bottom: rem(20px);
 		display: flex;
+		align-items: center;
 
 	}
 
@@ -69,8 +74,13 @@
 	// color: #f7b23b;
 	color: white;
 	@include tablets {
-	font-size: rem(25px);
+	font-size: rem(30px);
 	display: inline-block;
+	}
+	@include phones{
+		display: flex;
+    flex-direction: column;
+    align-items: center;
 	}
 }
 .team-list__name::before {
@@ -154,7 +164,7 @@ p {
 	text-align: left;
 	width: rem(200px);
 	line-height: 180%;
-	transform: translateY(-24%);
+	transform: translateY(25%);
 	
 	// margin-left: 180px;
 	@include tablets {
@@ -164,13 +174,18 @@ p {
 		left: -0.625rem;
     text-align: center;
     margin-left: -1px;
-		margin-top: -1.2em;
-		font-size: rem(13px);
+		margin-top: -0.8em;
+		font-size: rem(14px);
+		margin-bottom: 4%;
 		// margin: 0 auto;
 		// transform: translateY(0%);
 	}
 	@include phones {
-		margin-top: -2.3em;
+		width: 100%;
+		padding: 0 25px;
+		margin-bottom: rem(25px);
+		margin-top: rem(5px);
+		font-size: rem(15px);
 		}
 
 }
@@ -180,24 +195,36 @@ p {
 		display: inline-block;
     width: rem(100px);
 		height: rem(100px);
-		transform: translateY(-40%);
+		
+		transform: translateY(8%);
 		
 		
 		@include tablets {
 			// color: #f7b23b;
-			// margin-left: -112px;
-			margin-left: 28px;
+			margin-left: 0;
+			// margin-left: 28px;
 			display: inline-block;
-			width: 5rem;
-			height: 5rem;
-			transform: translateX(115px);
-			margin-bottom: 41px;
-			margin-top: 12px;
+			width: 7rem;
+			height: 7rem;
+			// margin-left: 0px;
+
+			transform: translateX(153px);
+			// margin-bottom: 41px;
+			// margin-top: 12px;
 
 		}
 		@include phones {
-		width: rem(120px);
-		height: rem(120px);
-		transform: translateX(7em);
+		width: rem(115px);
+		height: rem(115px);
+		margin-left: rem(-26px);
+		
+		// transform: translateX(7em);
+		margin-bottom: rem(0px);
+		// margin-left: 0;
+		transform: translateY(0%);
+		margin-top: rem(20px);
+		transform: translateX(0px);
+
+		
 		}
 }

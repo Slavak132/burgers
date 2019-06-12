@@ -72,6 +72,10 @@
     align-items: center;
     width: 100%;
   }
+  @include phones{
+    padding-left: 2%;
+  }
+  
 }
 .form__adress-block {
   width: 49.94%;
@@ -90,6 +94,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: rem(5px);
+  @include phones{
+    margin-bottom: 2vh;
+  }
 }
 .form__name, .form__phone {
   width: 47.83%;
@@ -158,6 +165,10 @@ label {
 .form__comments {
   width: 100%;
   margin-bottom: 4.35%;
+  @include phones{
+    margin-bottom: 8.35%;
+  }
+
 }
 .form__comments-textarea:invalid {
   border: 3px solid;
@@ -180,6 +191,7 @@ textarea {
   margin-bottom: 1.74%;
   @include phones{
     justify-content: center;
+    margin-bottom: 5.54%;
   }
 }
 .form__change {

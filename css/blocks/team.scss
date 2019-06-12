@@ -6,7 +6,7 @@
 	// height: 63%;
 	}
 	.section__title {
-		font-size: 3.8rem;
+		// font-size: 3.8rem;
 	}
 		@include phones{
 		// margin-bottom: 6%;	
@@ -46,15 +46,16 @@
 
 .section__title--team{
 	@include tablets {
-		margin-top: 13vh;
+		margin-top: 20vh;
 	// display: flex;
 	// position: absolute;
 	// margin-top: -2.5em;
 	// margin-bottom: 3%;
 	// font-size: rem(75px);
 }
-@include phones{
-	margin-top: 15vh;	
+	@include phones{
+	margin-top: 15vh;
+	margin-bottom: 0;	
 	font-size: rem(55px);
 	}
 }

@@ -16,6 +16,7 @@ body {
 }
 
 body {
+
   font-size: rem(16px);
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +24,7 @@ body {
   @include ubuntu();
   color: $black;
   @include tablets{
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   @include phones{
@@ -42,6 +43,8 @@ body {
   display: flex;
   flex-direction: column;
   &.container__hero{
+    width: 100%;
+    padding: 0;
     @include tablets {
       display: flex;
       position: relative;
@@ -50,6 +53,7 @@ body {
       // align-content: center;
     }
     @include phones{
+    padding: 0;
     max-width: 33.75rem;
     width: 100%;
   
@@ -81,6 +85,7 @@ body {
     }
   }
   &.container__burgers{
+    padding: 0;
     @include phones{
       width: 95%;
      
@@ -117,7 +122,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 
 }
 
