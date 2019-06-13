@@ -4,13 +4,13 @@
 	min-height: rem(650px);
 	position: relative;
   display: flex;
-  // overflow: hidden;
+
   
 	@include tablets {
 		min-height: initial;
 		// height: 100vh;
 		&.hero{
-			height: 68.2em;
+			height: 68.3em;
 		}
 		&.best{
 			
@@ -24,19 +24,19 @@
 				height: 68em;
 			}
 			&.menu{
-				height: 68em;
+				height: 68.6em;
 			}
 			&.reviews{
 				height: 68.4em;
 			}
 			&.job{
-				height: 68.4em;
+				height: 67.4em;
 			}
 			&.form-block{
-				height: 67em;
+				height: 68em;
 			}
 			&.map{
-				height: 57em;
+				height: 46.5em;
 			}
 
 

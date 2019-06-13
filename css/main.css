@@ -154,6 +154,8 @@ html, body { height: 100%; }
 
 body { font-size: 1rem; line-height: 1.42; -webkit-font-smoothing: antialiased; position: relative; font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: 300; color: #2f3234; }
 
+body.body-overflow { overflow: hidden; }
+
 .container { margin: 0 auto; position: relative; max-width: 58.75rem; width: 95%; display: flex; flex-direction: column; }
 
 .container.container__hero { width: 100%; padding: 0; }
@@ -278,9 +280,9 @@ footer { position: relative; width: 100%; }
 
 .icon { width: 100%; }
 
-@media screen and (max-width: 1099px) { .icon { width: 50%; } }
+@media screen and (max-width: 1099px) { .icon { width: 70%; } }
 
-@media screen and (max-width: 767px) { .icon { width: 50%; } }
+@media screen and (max-width: 767px) { .icon { width: 100%; } }
 
 .composition { display: flex; }
 
@@ -452,7 +454,7 @@ footer { position: relative; width: 100%; }
 
 .burger-menu--active::after { content: ""; width: 34px; height: 50px; position: absolute; top: -30px; left: 0; display: block; border-radius: 10px/10px; background: #fff; opacity: 0; }
 
-.nav { display: flex; flex: 1; padding: 0 10%; }
+.nav { overflow: hidden; display: flex; flex: 1; padding: 0 10%; }
 
 @media screen and (max-width: 1099px) { .nav { display: none; } }
 
@@ -492,8 +494,6 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 1099px) { .hero { padding-bottom: 6.25rem; } }
 
-@media screen and (max-width: 767px) { .hero { padding-bottom: 8.25rem; } }
-
 .hero__content { width: 100%; display: flex; }
 
 @media screen and (max-width: 1099px) { .hero__content { flex-direction: column; } }
@@ -506,25 +506,25 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 767px) { .hero__container { align-items: center; } }
 
-.hero__left { height: 100%; display: flex; flex-direction: column; justify-content: center; width: 100%; }
+.hero__left { height: 100%; display: flex; padding-left: 7%; justify-content: center; width: 50%; }
 
-@media screen and (max-width: 1099px) { .hero__left { height: 60%; align-items: center; } }
+@media screen and (max-width: 1099px) { .hero__left { height: 63%; width: 100%; padding-left: 0; align-items: center; } }
 
 @media screen and (max-width: 767px) { .hero__left { width: 100%; } }
 
-.hero__right { display: flex; flex-direction: column; justify-content: center; padding: 2%; }
+.hero__right { display: flex; flex-direction: column; justify-content: center; width: 50%; height: 80%; }
 
-@media screen and (max-width: 1099px) { .hero__right { height: 50%; text-align: center; padding: 0; } }
+@media screen and (max-width: 1099px) { .hero__right { height: 20%; width: 100%; text-align: center; padding: 0; } }
 
-@media screen and (max-width: 767px) { .hero__right { margin-top: 0; } }
+@media screen and (max-width: 767px) { .hero__right { margin-top: 0; height: 34%; } }
 
 .hero__desc { font-size: 4.0625rem; color: white; font-family: 'Lifehack-Medium'; font-size: 4.0625rem; text-transform: lowercase; line-height: 0.87em; }
 
-.hero__img { display: inline-block; position: relative; justify-content: center; width: 100%; }
+.hero__img { height: 73%; flex-direction: row; object-fit: contain; }
 
-@media screen and (max-width: 1099px) { .hero__img { position: inherit; width: 60%; } }
+@media screen and (max-width: 1099px) { .hero__img { position: inherit; width: 90%; } }
 
-@media screen and (max-width: 767px) { .hero__img { width: 90%; transform: translateX(0%); } }
+@media screen and (max-width: 767px) { .hero__img { width: 90%; height: 90%; transform: translateX(0%); } }
 
 .down-arrow { position: absolute; bottom: 1.25rem; left: 50%; width: 3.75rem; transform: translateX(-50%); transition: .3s; height: 3.75rem; display: flex; align-items: center; justify-content: center; }
 
@@ -823,15 +823,15 @@ button { cursor: pointer; border: none; background: transparent; outline: none; 
 .section { height: 100vh; min-height: 40.625rem; position: relative; display: flex; }
 
 @media screen and (max-width: 1099px) { .section { min-height: initial; }
-  .section.hero { height: 68.2em; }
+  .section.hero { height: 68.3em; }
   .section.best { height: 68.2em; }
   .section.burgers { height: 68.2em; }
   .section.team { height: 68em; }
-  .section.menu { height: 68em; }
+  .section.menu { height: 68.6em; }
   .section.reviews { height: 68.4em; }
-  .section.job { height: 68.4em; }
-  .section.form-block { height: 67em; }
-  .section.map { height: 57em; } }
+  .section.job { height: 67.4em; }
+  .section.form-block { height: 68em; }
+  .section.map { height: 46.5em; } }
 
 @media screen and (max-width: 767px) { .section { height: 100%; } }
 
@@ -892,7 +892,7 @@ button { cursor: pointer; border: none; background: transparent; outline: none; 
 
 .vk, .fb, .twitter, .inst { width: 1.5625rem; height: 1.5625rem; }
 
-.team-list { margin-top: 7%; display: flex; flex-direction: column; align-items: flex-start; width: 100%; margin-left: 7em; }
+.team-list { padding-left: 2em; display: flex; flex-direction: column; align-items: flex-start; width: 100%; }
 
 @media screen and (max-width: 1099px) { .team-list { margin-top: 3%; margin-left: 0em; display: flex; flex-direction: column; align-items: center; } }
 
@@ -944,14 +944,14 @@ p { margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; ma
 
 .team { background: url("../img/background/campani.jpg") 50% no-repeat; background-size: cover; position: relative; }
 
-@media screen and (max-width: 1099px) { .team { margin-top: 1vh; display: flex; align-items: center; justify-content: center; }
+@media screen and (max-width: 1099px) { .team { display: flex; align-items: center; justify-content: center; }
   .team:before { content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(47, 50, 52, 0.93); } }
 
 @media screen and (max-width: 1099px) { .team__section { width: 90%; height: 90%; display: flex; flex-direction: column; align-items: center; } }
 
 @media screen and (max-width: 1099px) { .section__title--team { margin-top: 20vh; } }
 
-@media screen and (max-width: 767px) { .section__title--team { margin-top: 15vh; margin-bottom: 0; font-size: 3.4375rem; } }
+@media screen and (max-width: 767px) { .section__title--team { margin-top: 10vh; margin-bottom: 0; font-size: 3.4375rem; } }
 
 .team__section { position: absolute; right: 0; top: 0; bottom: 0; left: 50%; background: rgba(47, 50, 52, 0.93); padding: 7% 5% 0 0; text-align: center; }
 
@@ -981,7 +981,7 @@ p { margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; ma
 
 .burger-menu--active::after { content: ""; width: 34px; height: 50px; position: absolute; top: -30px; left: 0; display: block; border-radius: 10px/10px; background: #fff; opacity: 0; }
 
-.nav { display: flex; flex: 1; padding: 0 10%; }
+.nav { overflow: hidden; display: flex; flex: 1; padding: 0 10%; }
 
 @media screen and (max-width: 1099px) { .nav { display: none; } }
 

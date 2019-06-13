@@ -15,7 +15,9 @@ body {
   
 }
 
+
 body {
+
 
   font-size: rem(16px);
   line-height: 1.42;
@@ -33,7 +35,9 @@ body {
 
 
 }
-
+body.body-overflow{
+  overflow: hidden;
+}
 
 .container {
   margin: 0 auto;
@@ -122,8 +126,10 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  // overflow: hidden;
-
+  // &.burger-menu--active{
+    // overflow: hidden;
+  //   }
+  
 }
 
 
