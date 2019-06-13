@@ -31,7 +31,7 @@
   width: 70.22%;
   line-height: 0;
   @include tablets {
-    width: 109%;
+    width: 90%;
   }
   @include phones{
     width: 96%;
@@ -64,15 +64,15 @@
   display: none; }
 
 .video__toolbar {
-  margin-top: -1px;
+  // margin-top: -1px;
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #3e3e3e;
   @include tablets{
-    margin-top: -1px;
-    width: 109%
+    // margin-top: -1px;
+    width: 90%
   }
   @include phones{
     margin-top: -1px;

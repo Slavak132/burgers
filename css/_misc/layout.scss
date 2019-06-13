@@ -99,7 +99,15 @@ body.body-overflow{
     @include phones{
       padding: 0;
     }
+    @include tablets{
+      padding: 0;
+    }
   }
+  &.form__container{
+    padding: 0;
+  }
+
+  
   &.footer__container {
     display: flex;
     flex-direction: row;

@@ -84,7 +84,7 @@
   justify-content: space-between;
   @include tablets{
 
-    width: 73%;
+    width: 61%;
   }
   @include phones{
     width: 100%;
@@ -96,6 +96,9 @@
   margin-top: rem(5px);
   @include phones{
     margin-bottom: 2vh;
+  }
+  @include tablets{
+    margin-top: 1.3125rem;
   }
 }
 .form__name, .form__phone {
@@ -156,7 +159,8 @@ label {
   flex-direction: column;
   justify-content: space-between;
   @include tablets{
-    width: 73%;
+    width: 61%;
+    padding-right: 1%;
   }
   @include phones{
     width: 100%;
@@ -171,7 +175,7 @@ label {
 
 }
 .form__comments-textarea:invalid {
-  border: 3px solid;
+  // border: 3px solid;
   height: 110px;
   
 }
@@ -312,7 +316,7 @@ input[type="checkbox"] {
   z-index: 20;
   color: white;
   @include tablets{
-    width: 85%;
+    width: 80%;
   }
   @include phones{
     display: flex;

@@ -36,7 +36,7 @@
 				height: 68em;
 			}
 			&.map{
-				height: 46.5em;
+				height: 58em;
 			}
 
 
@@ -45,13 +45,15 @@
 
 	}
 	@include phones{
-		height: 100%;
-	}
-	&.best{
-		@include phones{
-			height: 57em;
-
+	&.hero{
+		height: 57em;
+	
 		}
+		// height: 100%;
+	
+	&.best{
+		height: 57em;
+
 	}
 	&.burgers{
 		@include phones{
@@ -67,7 +69,7 @@
 	}
 	&.menu{
 		@include phones{
-			height: 57em;
+			height: 57.7em;
 
 		}
 	}
@@ -79,7 +81,7 @@
 	}
 	&.job{
 		@include phones{
-			height: 57em;
+			height: 57.4em;
 
 		}
 	}
@@ -89,12 +91,12 @@
 
 		}
 	}
-	// &.map{
-	// 	@include phones{
-	// 		height: 54em;
+	&.map{
+	
+			height: 59em;
 
-	// 	}
-	// }
+		
+	}
 }
 
 .section__title {
@@ -118,6 +120,7 @@
 
 	@include gagalin;
 	margin-bottom: rem(12px);
+
 
 	&.section__title_black {
 		color: $black;
@@ -162,10 +165,6 @@
 			margin-top: 1%;
 			font-size: 5rem;
 		}
-		
-
-		
-
 	}
 	@include phones {
 		margin-top: -9%;
@@ -175,12 +174,15 @@
 			font-size: 3.9rem;
 		}
 	}
+
+
 	&.section__title_hero {
 		@include tablets{
 			font-size: 4.9rem;
 
 		}
 	
+
 	}
 	&.section__title_order{
 		@include tablets{
@@ -192,4 +194,8 @@
 		margin-top: -4vh;
 		}
 	}
+	&.section__title--team{
+		margin-top: 22%;
+	}
+}
 }
