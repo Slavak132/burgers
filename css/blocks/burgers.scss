@@ -297,7 +297,7 @@
     .black__btn{
       flex-flow: row;
       margin-left: 5%;
-      color: #b24c2b;
+      color: #b24b2a;
       font-size: rem(14px);
       text-decoration: none; /* убираем у ссылки нижнее подчеркивание*/
       text-transform:uppercase;
@@ -315,20 +315,20 @@
       }
       
   }
-  .black__btn:hover{
-    display: flex;
-    display: inline-block/block/flex;
-    cursor: pointer;
-    outline:none; /* убираем обводку у кнопки при наведении*/
-    border-radius: rem(5px);
-    flex-flow: row;
-    color: white;
-    text-transform:uppercase;
-    justify-content: space-between;
-    padding: rem(5px) rem(10px);
-    border: 1px solid transparent;
-    background: #b24c2b;
-  }
+  // .black__btn:hover{
+  //   display: flex;
+  //   display: inline-block/block/flex;
+  //   cursor: pointer;
+  //   outline:none; /* убираем обводку у кнопки при наведении*/
+  //   border-radius: rem(5px);
+  //   flex-flow: row;
+  //   color: white;
+  //   text-transform:uppercase;
+  //   justify-content: space-between;
+  //   padding: rem(5px) rem(10px);
+  //   border: 1px solid transparent;
+  //   background: #b24c2b;
+  // }
 }
 
 
