@@ -492,7 +492,7 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 1099px) { .header__menu { text-align: right; } }
 
-.header__links { margin-left: -5.625rem; }
+.header__links { margin-left: -1.625rem; }
 
 .hero { background: url("../img/background/texture.jpg") center center no-repeat; background-size: cover; position: relative; }
 
