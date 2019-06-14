@@ -63,11 +63,13 @@
 }
 .form__client {
   margin-bottom: 6.26%;
+  margin: 0 77px;
   position: relative;
   display: flex;
   justify-content: space-between;
   z-index: 20;
   @include tablets{
+    margin: 0;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -160,6 +162,7 @@ label {
   justify-content: space-between;
   @include tablets{
     width: 61%;
+    margin-top: 1em;
     padding-right: 1%;
   }
   @include phones{
@@ -316,6 +319,7 @@ input[type="checkbox"] {
   z-index: 20;
   color: white;
   @include tablets{
+    margin-top: 3em;
     width: 80%;
   }
   @include phones{

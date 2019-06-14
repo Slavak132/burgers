@@ -258,10 +258,11 @@
     // margin-top: 1%;
   }
   @include phones{
+    width: 31em;
     margin-left: 0;
     font-size: 0.625rem;
     margin-top: 0;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   }
   
@@ -272,16 +273,22 @@
     align-items: baseline;
     // margin-bottom: 10px;
     font-size: 5.5em;
-    color: #b24c2b;
+    color: #e35028;
     font-family: 'Gagalin-Regular';
     font-weight: 300;
     
     font-style: normal;
+    @include phones{
+      margin-bottom: 0;
+
+    }
+
+
     .rubles{
     flex-flow: row;
     margin-left: rem(5px);
     font-size: rem(28px);
-    color: #b24c2b;
+    color: #e35028;
     font-family: 'Gagalin-Regular';
     font-weight: 300;
     font-style: normal;
@@ -289,6 +296,8 @@
       margin-left: rem(7px);
     }
     @include phones{
+      align-items: flex-end;
+      width: 5em;
       
       font-size: rem(28px);
     }
@@ -309,7 +318,7 @@
         margin-left: 9%;
       }
       @include phones{
-        margin-left: rem(50px);
+        // margin-left: rem(50px);
         font-size: rem(16px);
         margin-bottom: rem(30px);
       }

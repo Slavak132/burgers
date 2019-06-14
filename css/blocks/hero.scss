@@ -3,7 +3,7 @@
   background-size: cover;
   position: relative;
   @include tablets {
-    padding-bottom: rem(100px);
+    // padding-bottom: rem(100px);
   }
   @include phones {
     // padding-bottom: 8.25rem;
@@ -62,7 +62,7 @@
     align-items: center;
   }
   @include phones {
-    // height: rem(230px);
+    height: 50%;
     width: 100%;
   }
 }
@@ -83,7 +83,7 @@
   }
   @include phones {
     margin-top: 0;
-    height: 34%;
+    height: 50%;
     // padding-top: rem(-115px);
   }
 }
@@ -118,8 +118,8 @@
     // margin-top: rem(80px);
   }
   @include phones {
-    width: 90%;
-    height: 90%;
+    // width: 90%;
+    height: 100%;
     // position: inherit;
     transform: translateX(0%);
     // margin-top: 0rem;

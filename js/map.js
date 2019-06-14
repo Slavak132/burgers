@@ -68,7 +68,7 @@ function init() {
         {
             //  меняею метку на не штатную 
           iconLayout: 'default#image', //макет
-          iconImageHref: './img/map-marker.png', //путь к иконке
+          iconImageHref: '/img/map-marker.png', //путь к иконке
           iconImageSize: [46, 57], //размеры
           iconImageOffset: [-23, -57], //смещаем точку опору метки
         });
