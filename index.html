@@ -450,38 +450,40 @@
             </svg></a> -->
         </section>
         <section id="job" class="section job">
-          <div class="container container__job">
-            <h2 class="section__title section__title_job section__title_black ">как мы работаем</h2>
-
-            <div class="video__player">
-              <video id="video" class="video__poster" poster="./img/background/video.png">
-                <source src="./img/video/burgers.mp4" type="video/mp4">
-              </video>
-              <svg class="video__play play">
-                <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
-              </svg>
-            </div>
-            <div class="video__toolbar">
-              <div class="video__duration">
-                <svg class="video__toolbar-play play">
-                  <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
-                </svg>
-                <div id="timer" class="video__timer">
+            <!-- <section class="video section"> -->
+              <div class="container ontainer__job">
+                  <h2 class="section__title section__title_job section__title_black ">как мы работаем</h2>
+                <div class="video__player">
+                  <video id="video" class="video__poster" poster="./img/background/video.png">
+                    <source src="./img/video/burgers.mp4" type="video/mp4">
+                  </video>
+                  <svg class="video__play play">
+                    <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
+                  </svg>
                 </div>
-                <input type="range" id="duration-time" class="video__length" min="0" max="103.004">
+                <div class="video__toolbar">
+                  <div class="video__duration">
+                    <svg class="video__toolbar-play play">
+                      <use xlink:href="./img/sprite/sprite.svg#play-video"></use>
+                    </svg>
+                    <svg class="video__toolbar-pause play">
+                      <use xlink:href="./img/sprite/sprite.svg#pause-video"></use>
+                    </svg>
+                    <input type="range" id="duration-time" class="video__length">
+                    <div id="timer" class="video__timer">0:00</div>
+                  </div>
+                  
+                  <div class="video__volume-block">
+                    <svg class="video__volume">
+                      <use xlink:href="./img/sprite/sprite.svg#play-volume"></use>
+                    </svg>
+                    <svg class="video__volume-muted">
+                      <use xlink:href="./img/sprite/sprite.svg#volume_none"></use>
+                    </svg>
+                    <input type="range" id="volume-level" class="video__volume-level">
+                  </div>
+                </div>
               </div>
-              <div class="video__volume">
-                <svg class="video__volume-icon">
-                  <use xlink:href="./img/sprite/sprite.svg#play-volume"></use>
-                </svg>
-                <input type="range" id="volume-level" class="video__volume-level" min="0" max="10">
-              </div>
-            </div>
-          </div>
-          <!-- <a class="down-arrow" href="#order">
-            <svg class="down-arrow__icon">
-              <use xlink:href="./img/sprite/sprite.svg#arrow-down"></use>
-            </svg></a> -->
         </section>
         <section id="form-block" class="form-block section">
                 <div class="form__container container">
