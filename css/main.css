@@ -190,7 +190,11 @@ body.body-overflow { overflow: hidden; }
 
 @media screen and (max-width: 767px) { .container.footer__container { flex-direction: column; height: 8.25rem; } }
 
-.wrapper { position: relative; width: 100%; min-height: 100%; }
+.wrapper { height: 100%; overflow: hidden; }
+
+.one-page-scroll { height: 100%; position: relative; bottom: 0; right: 0; transition-property: transform; transition-duration: 1s; will-change: transform; }
+
+@media screen and (max-width: 767px) { .one-page-scroll { min-height: initial; } }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 0; font-weight: normal; }
 
