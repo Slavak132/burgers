@@ -1,0 +1,29 @@
+
+
+.menu {
+	background: url('../img/background/menu.jpg') 50% no-repeat;
+	background-size: cover;
+	justify-content: flex-end;
+
+	// position: relative;
+}
+
+.menu__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	margin-left: -2vh;
+	margin-top: 3vh;
+	@include tablets{
+		top: 8%;
+    left: 6%;
+		margin-left: -5vh;
+    margin-top: -2vh;
+    font-size: rem(72px);
+	}
+	@include phones{
+		margin-top: -6vh;
+    margin-left: 1%;
+		
+	}
+}

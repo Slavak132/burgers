@@ -1,0 +1,104 @@
+.container__burgers{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  @include tablets {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    text-align: center;
+		flex-direction: column;
+    // margin: 0 25px;
+    // margin-bottom: 20px;
+  }
+  @include phones{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: column;
+  }
+
+}
+
+.slider {
+
+  // display: flex;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  
+
+
+  @include tablets {
+    display: flex;
+    // margin-top: -100px;
+    // margin-bottom: -95px;
+    width: 100%;
+    height: 100%;
+    // margin-left: rem(-56px);
+    overflow: hidden;
+
+  }
+
+  @include phones{
+    display: inline-block;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 90%;
+    margin-left: 0;
+    overflow: hidden;
+
+
+  }
+  
+
+}
+.burger {
+  display: flex;
+  display: -webkit-box;
+  position: relative;
+  font-size: 100%;
+  overflow: hidden;
+
+  @include tablets {
+    display: flex;
+    font-size: 100%;
+    display: block;
+  }
+  @include phones {
+    // width: 100%;
+    font-size: 100%;
+  }
+}
+
+.burgers-slider{
+  display: flex;
+  width: 100%;
+  // margin-right: 5%;
+
+  // margin-left: 33px;
+  // margin-right: 33px;
+  // text-align: right;
+  // border: 2px solid black;
+  @include tablets {
+    display: inline-block;
+    margin-top: 5%;
+    height: 100%;
+
+  }
+  @include phones {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    height: 53em;
+    justify-content: center;
+    // margin: 0;
+
+
+}
+}

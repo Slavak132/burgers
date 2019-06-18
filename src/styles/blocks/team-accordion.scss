@@ -1,0 +1,236 @@
+.team-list {
+	padding-left: 7.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	// margin-left: 7em;
+	@include tablets {
+		margin-top: 0%;
+		padding-left: 4.5em;
+		margin-left: 0em;
+		display: flex;
+	
+    flex-direction: column;
+    align-items: center;
+	}
+	@include phones{
+		margin-top: 0;
+	}
+	
+}
+.team-list__item {
+	position: relative;
+	@include tablets {
+		// margin-bottom: -1em;
+	}
+	@include phones{
+		margin-bottom: rem(9px);
+	}
+}
+.team-list__img {
+	display: none;
+	// overflow: hidden;
+	border-radius: 50%;
+	margin-top: rem(10px);
+	width: rem(100px);
+	height: rem(100px);
+	@include phones{
+		margin-top: rem(11px);
+		
+	}
+}
+
+.team-list__pic {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.team-list__description {
+	display: -webkit-box;
+	margin-bottom: rem(30px);
+	flex-direction: column;
+	@include tablets {
+		margin-bottom: 1rem;
+		text-align: center;
+		display: flex;
+	}
+	@include phones {
+		margin-bottom: rem(20px);
+		display: flex;
+		align-items: center;
+
+	}
+
+	
+}
+
+.team-list__name {
+	// transform: translateY(-600%)
+	// margin-bottom: 1%;
+	// width: rem(140px);
+	// height: rem(20px);
+	font-family: 'Gagalin-Regular';
+  font-weight: 300;
+  font-style: normal;
+  font-size: rem(14px);
+	position: relative;
+	align-self: center;
+	cursor: pointer;
+	// color: #f7b23b;
+	color: white;
+	@include tablets {
+	font-size: rem(30px);
+	display: inline-block;
+	}
+	@include phones{
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+}
+.team-list__name::before {
+	content: "";
+	width: 1.25rem;
+	height: 0.625rem;
+	position: absolute;
+	// color: #f7b23b;
+	// top: 50%;
+	right: 104%;
+}
+.team-list__slider-control {
+
+	
+	top: 52%;
+	width: rem(5px);
+	height: 0;
+	position: absolute;
+	// top: 50%;
+	right: 104%;
+
+	transform: translateY(-40%);
+	// transition: 0.4s ease-in;
+	border: 5px solid#f7b23b;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	
+}
+.team-list__name--active .team-list__slider-control {
+	top: 5%;
+	width: rem(5px);
+	height: 0;
+	position: absolute;
+	right: 104%;
+	transform: translateY(-60%);
+	border: 5px solid #f7b23b;
+	border-top: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	@include tablets {
+	top: 5%;
+	width: rem(5px);
+	height: 0;
+	position: absolute;
+	right: 104%;
+	transform: translateY(250%);
+	border: 5px solid #f7b23b;
+	border-top: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+}
+.team-list__slider-text {
+	display: none;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	font-size: 1.125em;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	z-index: 10;
+	transform: translateX(50%);
+	left: 10%;
+	margin-left: 44px;
+	
+}
+p {
+	// display: block;
+	
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.team-list__name--active ~ p.team-list__slider-text {
+	display: inline-block;
+	font-size: rem(14px);
+	left: rem(-26px);
+	text-align: left;
+	width: rem(200px);
+	line-height: 180%;
+	transform: translateY(25%);
+	
+	// margin-left: 180px;
+	@include tablets {
+		display: flex;
+    flex-direction: column;
+		width: 100%;
+		left: -0.625rem;
+    text-align: center;
+    margin-left: -1px;
+		margin-top: -0.8em;
+		font-size: rem(14px);
+		margin-bottom: 4%;
+		// margin: 0 auto;
+		// transform: translateY(0%);
+	}
+	@include phones {
+		width: 100%;
+		padding: 0 25px;
+		margin-bottom: rem(25px);
+		margin-top: rem(5px);
+		font-size: rem(15px);
+		}
+
+}
+.team-list__name--active ~ .team-list__img {
+		margin-left: -89px;
+		// transform: translateY(-600%);
+		display: inline-block;
+    width: rem(100px);
+		height: rem(100px);
+		
+		transform: translateY(8%);
+		
+		
+		@include tablets {
+			// color: #f7b23b;
+			margin-left: 0;
+			// margin-left: 28px;
+			display: inline-block;
+			width: 7rem;
+			height: 7rem;
+			// margin-left: 0px;
+
+			transform: translateX(153px);
+			// margin-bottom: 41px;
+			// margin-top: 12px;
+
+		}
+		@include phones {
+		width: rem(115px);
+		height: rem(115px);
+		margin-left: rem(-26px);
+		
+		// transform: translateX(7em);
+		margin-bottom: rem(0px);
+		// margin-left: 0;
+		transform: translateY(0%);
+		margin-top: rem(20px);
+		transform: translateX(0px);
+
+		
+		}
+}

@@ -1,0 +1,42 @@
+.header {
+	height: rem(90px);
+	padding-top: rem(12px);
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	@include tablets {
+		
+		width: 95%;
+	}
+	@include phones {
+		width: 100%;
+		
+	}
+}
+
+.header__logo {
+	width: rem(90px);
+	height: rem(90px);
+	@include tablets {
+		width: 11%;
+	}
+}
+
+.header__menu {
+	flex: 3;
+	text-align: right;
+	// margin-right: rem(10px);
+
+	@include tablets {
+		width: 85%;
+	}
+
+	@include tablets {
+		text-align: right;
+	}
+}
+
+.header__links{
+	// margin-left: -1.625rem;
+}

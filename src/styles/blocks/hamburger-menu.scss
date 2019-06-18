@@ -1,0 +1,103 @@
+.burger-menu {
+
+	
+	display: none;
+	@include tablets {
+	margin-right: 12px;
+	width: rem(24px);
+	height: 5px;
+	margin-left: 5px;
+	position: relative;
+	display: block;
+	border-radius: 10px/10px;
+	background: #fff;
+	
+	}
+}
+
+.burger-menu::before {
+
+
+	@include tablets {
+	content: "";
+	width: rem(24px);
+	height: 5px;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	display: block;
+	border-radius: 10px/10px;
+	background: #fff;
+	
+}
+}
+.burger-menu--active::before {
+
+
+	@include tablets {
+	content: "";
+	width: 24px;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	border-radius: 10px/10px;
+	transform: translate(-50%, -50%) rotate(90deg);
+	background: #fff;
+}
+}
+
+.burger-menu::after {
+	
+	display: none;
+	@include tablets {
+	content: "";
+	width: rem(24px);
+	height: 5px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	display: block;
+	border-radius: 10px/10px;
+	background: #fff;
+}
+}
+
+
+
+.burger-menu--active {
+	
+	display: flex;
+	cursor: pointer;
+	@include tablets {
+	width: 24px;
+	height: 5px;
+	position: fixed;
+	top: 6%;
+	left: 93%;
+	display: block;
+	border-radius: 10px/10px;
+	background: #fff;
+	transform: rotate(45deg);
+	z-index: 150;
+}
+}
+.burger-menu--active::after {
+	
+	@include tablets {
+	content: "";
+	width: 34px;
+	height: 50px;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	display: block;
+	border-radius: 10px/10px;
+	background: #fff;
+	opacity: 0;
+}
+}
+
+
+

@@ -190,7 +190,7 @@ body.body-overflow { overflow: hidden; }
 
 @media screen and (max-width: 767px) { .container.footer__container { flex-direction: column; height: 8.25rem; } }
 
-.wrapper { height: 100%; overflow: hidden; }
+.wrapper { position: relative; width: 100%; min-height: 100%; }
 
 .one-page-scroll { height: 100%; position: relative; bottom: 0; right: 0; transition-property: transform; transition-duration: 1s; will-change: transform; }
 
@@ -572,11 +572,11 @@ footer { position: relative; width: 100%; }
 
 @media screen and (max-width: 1099px) { .accordion__pic { width: 4.25rem; } }
 
-.accordion__text { position: absolute; bottom: 5%; left: -5%; transform: rotate(180deg); font-weight: 500; color: inherit; writing-mode: vertical-rl; font-family: 'Gagalin-Regular'; font-weight: 300; font-style: normal; font-size: 2.5rem; color: white; bottom: 6%; left: -29%; }
+.accordion__text { position: absolute; bottom: 5%; left: -5%; transform: rotate(180deg); font-weight: 500; color: inherit; writing-mode: vertical-rl; font-family: 'Gagalin-Regular'; font-weight: 300; font-style: normal; font-size: 2.5rem; color: white; bottom: -29%; left: 29%; }
 
-@media screen and (max-width: 1099px) { .accordion__text { bottom: 3%; left: -27%; } }
+@media screen and (max-width: 1099px) { .accordion__text { bottom: 3%; left: 29%; } }
 
-@media screen and (max-width: 767px) { .accordion__text { left: -30%; bottom: 7.5%; } }
+@media screen and (max-width: 767px) { .accordion__text { left: 29%; bottom: 7.5%; } }
 
 .accordion__description { font-family: 'Ubuntu'; font-style: normal; font-size: 0.875rem; color: white; position: relative; width: 0; height: 0; font-size: 1em; line-height: 1.5; z-index: 10; }
 
@@ -584,7 +584,13 @@ footer { position: relative; width: 100%; }
 
 .accordion-item { background-color: rgba(0, 0, 0, 0.712); }
 
-@media screen and (max-width: 1099px) { .accordion__text--titles { font-size: 2.75rem; } }
+.accordion-item--active ~ .accordion__description { width: 26.875rem; padding: 3.5rem 1.625rem; padding-top: 3.5rem; padding-right: 1.625rem; padding-bottom: 3.5rem; padding-left: 1.625rem; }
+
+.accordion__text--titles { top: 95%; bottom: -35%; }
+
+@media screen and (max-width: 1099px) { .accordion__text--titles { top: 95%; font-size: 2.75rem; } }
+
+@media screen and (max-width: 767px) { .accordion__text--titles { top: 95%; } }
 
 .menu { background: url("../img/background/menu.jpg") 50% no-repeat; background-size: cover; justify-content: flex-end; }
 

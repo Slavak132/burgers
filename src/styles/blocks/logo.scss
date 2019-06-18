@@ -1,0 +1,27 @@
+.logo {
+	display: inline-block;
+	position: relative;
+	z-index: 150;
+
+	// svg {
+	// 	max-width: 100%;
+	// }
+}
+
+.logo__img {
+	height: rem(75px);
+}
+
+.logo__icon {
+	max-height: rem(70px);
+	width: rem(90px);
+	path:nth-child(1) {
+		fill: #e45028;
+	}
+	@include tablets {
+		max-height: 5.375rem;
+		width: 6.625rem;
+
+	}
+}
+

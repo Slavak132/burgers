@@ -1,0 +1,212 @@
+.section {
+	height: 100vh;
+	min-height: rem(650px);
+	position: relative;
+  display: flex;
+	// height: 100%;
+  // min-height: 650px;
+  // display: flex;
+  // @include phones {
+  //   min-height: 100%;
+  // }
+  
+	@include tablets {
+		min-height: initial;
+		// height: 100vh;
+		&.hero{
+			height: 68.3em;
+		}
+		&.best{
+			
+			height: 68.2em;
+	
+			}
+			&.burgers{
+				height: 68.2em;
+			}
+			&.team{
+				height: 68em;
+			}
+			&.menu{
+				height: 68.6em;
+			}
+			&.reviews{
+				height: 68.4em;
+			}
+			&.job{
+				height: 67.4em;
+			}
+			&.form-block{
+				height: 68em;
+			}
+			&.map{
+				height: 100%;
+			}
+
+
+
+
+
+	}
+	@include phones{
+	&.hero{
+		height: 57em;
+	
+		}
+		// height: 100%;
+	
+	&.best{
+		height: 57em;
+
+	}
+	&.burgers{
+		@include phones{
+			height: 57em;
+
+		}
+	}
+	&.team{
+		@include phones{
+			height: 57em;
+
+		}
+	}
+	&.menu{
+		@include phones{
+			height: 57.7em;
+
+		}
+	}
+	&.reviews{
+		@include phones{
+			height: 57em;
+
+		}
+	}
+	&.job{
+		@include phones{
+			height: 57.4em;
+
+		}
+	}
+	&.form-block{
+		@include phones{
+			height: 57em;
+
+		}
+	}
+	&.map{
+	
+		height: 100%;
+
+		
+	}
+}
+
+.section__title {
+	color: $yellow;
+	font-size: rem(72px);
+	// margin: 0 auto;
+	
+	@include tablets {
+		font-size: rem(80px);
+		// font-size: 5.2rem;
+		// margin-top: -1rem;
+	
+	}
+	@include phones {
+		// margin-top: rem(20px);
+		font-size: rem(70px);
+		// font-size: 5.2rem;
+		// height: 100vh;
+	
+	}
+
+	@include gagalin;
+	margin-bottom: rem(12px);
+
+
+	&.section__title_black {
+		color: $black;
+		margin-top: 4rem;
+
+		@include tablets {
+		margin-top: -8rem;
+		font-size: rem(76px);
+		}
+		@include phones {
+		justify-content: center;
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		font-size: rem(55px);
+		// margin-top: 0rem;
+		// padding-bottom: 5%;
+	}
+
+	}
+	&.section__title_job{
+		margin-top: -1rem;
+
+		@include tablets {
+			// margin-top: 0rem;
+		width: 100%;
+    font-size: 5rem;
+		flex-direction: column;
+		// margin-top: -17%;
+	}
+	@include phones {
+		font-size: rem(58px);
+		width: 80%;
+		margin-top: -4rem;
+    margin-bottom: 1em;
+	}
+}
+
+	&.section__title_white {
+		color: white;
+		@include tablets {
+			margin-top: 1%;
+			font-size: 5rem;
+		}
+	}
+	@include phones {
+		margin-top: -9%;
+		font-size: 3.75rem;
+		&.section__title_hero {
+			margin-top: 0;
+			font-size: 3.9rem;
+		}
+	}
+
+
+	&.section__title_hero {
+		@include tablets{
+			font-size: 4.9rem;
+
+		}
+	
+
+	}
+	&.section__title_order{
+		@include tablets{
+			margin-top: 3vh;
+		}
+
+		@include phones {
+		width: 100%;
+		margin-top: -4vh;
+		}
+	}
+	&.section__title--team{
+		margin-top: 12%;
+		padding-right: 2.2em;
+		margin-bottom: 1.75rem;
+		@include tablets{
+			margin-top: 20%;
+			padding-left: 11.5625rem;
+
+		}
+	}
+}
+}
