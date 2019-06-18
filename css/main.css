@@ -166,7 +166,7 @@ body.body-overflow { overflow: hidden; }
 
 @media screen and (max-width: 1099px) { .container.container_best { padding: 0; } }
 
-@media screen and (max-width: 767px) { .container.container_best { height: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+@media screen and (max-width: 767px) { .container.container_best { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
 .container.container__order { margin-top: -1rem; }
 
@@ -361,8 +361,6 @@ footer { position: relative; width: 100%; }
 .menu__list::before { content: ''; position: absolute; bottom: 90%; width: 90%; height: 0.9375rem; }
 
 .job { background: url("../img/background/how_work.png") center center/cover no-repeat; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-#job { height: 100%; min-height: 650px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .container__job { max-width: 1100px; width: auto; margin: 0 auto; padding: 0 7.28%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -853,8 +851,8 @@ button { cursor: pointer; border: none; background: transparent; outline: none; 
   .section.form-block { height: 68em; }
   .section.map { height: 100%; } }
 
-@media screen and (max-width: 767px) { .section.hero { height: 57em; }
-  .section.best { height: 57em; } }
+@media screen and (max-width: 767px) { .section.hero { height: 100%; }
+  .section.best { height: 100%; } }
 
 @media screen and (max-width: 767px) and (max-width: 767px) { .section.burgers { height: 57em; } }
 

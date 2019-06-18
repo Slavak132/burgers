@@ -8,38 +8,46 @@
   // display: flex;
   // @include phones {
   //   min-height: 100%;
-  // }
+	// }
   
 	@include tablets {
 		min-height: initial;
-		// height: 100vh;
-		&.hero{
+		// height: 100%;
+	&.hero{
 			height: 68.3em;
+			// height: 100%;
 		}
-		&.best{
-			
+	&.best{
+			// height: 100%;
 			height: 68.2em;
 	
 			}
-			&.burgers{
+	&.burgers{
 				height: 68.2em;
+				// height: 100%;
 			}
-			&.team{
+	&.team{
 				height: 68em;
+				// height: 100%;
 			}
-			&.menu{
+	&.menu{
 				height: 68.6em;
+				// height: 100%;
 			}
-			&.reviews{
+	&.reviews{
 				height: 68.4em;
+				// height: 100%;
 			}
-			&.job{
+	&.job{
 				height: 67.4em;
+				// height: 100%;
+
 			}
-			&.form-block{
+	&.form-block{
 				height: 68em;
+				// height: 100%;
 			}
-			&.map{
+	&.map{
 				height: 100%;
 			}
 
@@ -50,13 +58,15 @@
 	}
 	@include phones{
 	&.hero{
-		height: 57em;
+		// height: 57em;
+		height: 100%;
 	
 		}
 		// height: 100%;
 	
 	&.best{
-		height: 57em;
+		// height: 57em
+		height: 100%;;
 
 	}
 	&.burgers{

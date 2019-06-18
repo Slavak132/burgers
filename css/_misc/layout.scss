@@ -71,7 +71,8 @@ body.body-overflow{
 
     }
     @include phones{
-    height: 80%;
+    height: 100%;
+  
     display: flex;
     flex-direction: column;
       // width: 75%;
