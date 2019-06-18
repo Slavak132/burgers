@@ -390,7 +390,7 @@ footer { position: relative; width: 100%; }
 
 .video__toolbar-pause--active { display: block; }
 
-.video__timer { font-size: 1em; color: #c7bfbf; margin-left: 0.5rem; }
+.video__timer { font-size: 0.75rem; color: #c7bfbf; margin-left: 0.5rem; }
 
 .video__length { width: 100%; height: 5px; border-radius: 1px; background-color: #c7bfbf; -webkit-appearance: none; appearance: none; outline: none; }
 
