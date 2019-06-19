@@ -25,7 +25,7 @@ task (
 
 const styles = [
   "node_modules/normalize.css/normalize.css",
-  "src/styles/main.min.scss",
+  "src/styles/main.scss",
 ]
 
 task ("styles", () => {
